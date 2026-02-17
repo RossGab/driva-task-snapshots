@@ -15,7 +15,7 @@ const path = require("path");
 /* =========================
    FLAGS
 ========================= */
-const FORCE_RUN = process.env.FORCE_RUN === "1";
+const FORCE_RUN = process.env.FORCE_RUN === "0";
 
 /* =========================
    INIT FIREBASE
