@@ -78,7 +78,8 @@ async function run() {
     JSON.stringify(allTasksSnap.val() || {}, null, 2)
   );
 
-  console.log("✅ Snapshot complete");
+  console.log("✅ Snapshot script finished cleanly");
+  process.exit(0);
 }
 
 run().catch(err => {
