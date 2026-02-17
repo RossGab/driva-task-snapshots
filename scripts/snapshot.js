@@ -1,13 +1,17 @@
 /**
  * Firebase → GitHub snapshot script
- * One file per dateKey (YYYYMMDD.json)
+ * - One snapshot JSON per date (YYYYMMDD.json)
+ * - Frequency controlled by PH-time rules
+ * - Guaranteed to exit
  */
 
 const admin = require("firebase-admin");
 const fs = require("fs");
 const path = require("path");
 
-// 🔐 Load service account
+/* =========================
+   INIT FIREBASE
+========================= */
 const serviceAccount = JSON.parse(
   process.env.FIREBASE_SERVICE_ACCOUNT
 );
@@ -19,9 +23,52 @@ admin.initializeApp({
 
 const db = admin.database();
 
+/* =========================
+   SNAPSHOT DIR
+========================= */
 const SNAPSHOT_DIR = path.join(__dirname, "..", "snapshots");
 fs.mkdirSync(SNAPSHOT_DIR, { recursive: true });
 
+/* =========================
+   TIME HELPERS (PH)
+========================= */
+function nowPH() {
+  return new Date(
+    new Date().toLocaleString("en-US", { timeZone: "Asia/Manila" })
+  );
+}
+
+function daysAgoFromKey(dateKey) {
+  const y = Number(dateKey.slice(0, 4));
+  const m = Number(dateKey.slice(4, 6)) - 1;
+  const d = Number(dateKey.slice(6, 8));
+
+  const target = new Date(y, m, d);
+  const diffMs = nowPH() - target;
+
+  return Math.floor(diffMs / (1000 * 60 * 60 * 24));
+}
+
+/* =========================
+   FREQUENCY RULES (YOUR LOGIC)
+========================= */
+function shouldSnapshot(daysAgo, hourPH) {
+  // Only 6am–10pm
+  if (hourPH < 6 || hourPH > 22) return false;
+
+  if (daysAgo <= 1) return true;               // every 30 min
+  if (daysAgo <= 3) return hourPH % 2 === 0;   // every 2 hrs
+  if (daysAgo <= 5) return hourPH % 3 === 0;   // every 3 hrs
+  if (daysAgo === 6) return hourPH % 4 === 0;  // every 4 hrs
+  if (daysAgo === 7) return hourPH % 5 === 0;  // every 5 hrs
+
+  // day 8+ → once a day at 6am
+  return hourPH === 6;
+}
+
+/* =========================
+   SNAPSHOT ONE DATE
+========================= */
 async function snapshotDate(dateKey) {
   console.log(`📅 Snapshot ${dateKey}`);
 
@@ -43,34 +90,54 @@ async function snapshotDate(dateKey) {
 
   const outPath = path.join(SNAPSHOT_DIR, `${dateKey}.json`);
   fs.writeFileSync(outPath, JSON.stringify(tasks, null, 2));
+
+  console.log(`✅ Saved ${dateKey}.json (${taskIds.length} tasks)`);
 }
 
+/* =========================
+   MAIN
+========================= */
 async function run() {
-  console.log("📸 Snapshot start");
+  console.log("📸 Snapshot job started");
 
-  // 🔑 STEP 1: Get ALL available dates
-  const datesSnap = await db.ref("tasksByDate").get();
-  if (!datesSnap.exists()) {
+  const now = nowPH();
+  const hourPH = now.getHours();
+
+  // 🔑 Read ALL available dates
+  const allDatesSnap = await db.ref("tasksByDate").get();
+  if (!allDatesSnap.exists()) {
     console.log("⚠️ No tasksByDate found");
     return;
   }
 
-  const dateKeys = Object.keys(datesSnap.val()).sort();
+  const dateKeys = Object.keys(allDatesSnap.val()).sort().reverse();
 
-  console.log(`📦 Found ${dateKeys.length} date snapshots`);
+  for (const dateKey of dateKeys) {
+    const daysAgo = daysAgoFromKey(dateKey);
 
-  // 🔁 STEP 2: Snapshot each date
-  for (const dk of dateKeys) {
-    await snapshotDate(dk);
+    if (!shouldSnapshot(daysAgo, hourPH)) {
+      console.log(`⏭️ Skip ${dateKey} (daysAgo=${daysAgo}, hour=${hourPH})`);
+      continue;
+    }
+
+    await snapshotDate(dateKey);
   }
 
-  console.log("✅ Snapshot complete");
-  await admin.app().delete();
-  process.exit(0);
+  console.log("✅ Snapshot job completed");
 }
 
-run().catch(async err => {
-  console.error("❌ Snapshot failed:", err);
-  try { await admin.app().delete(); } catch {}
-  process.exit(1);
-});
+/* =========================
+   EXEC + CLEAN EXIT
+========================= */
+run()
+  .then(async () => {
+    await admin.app().delete();
+    process.exit(0);
+  })
+  .catch(async err => {
+    console.error("❌ Snapshot failed:", err);
+    try {
+      await admin.app().delete();
+    } catch {}
+    process.exit(1);
+  });
