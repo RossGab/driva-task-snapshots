@@ -1,0 +1,40 @@
+name: Firebase Task Snapshots
+
+on:
+  schedule:
+    # ⏱️ 6:00 AM – 10:00 PM PH time (UTC+8)
+    - cron: "*/30 22-14 * * *"   # every 30 min (today, today-1)
+    - cron: "0 */2 * * *"        # every 2 hours
+    - cron: "0 */4 * * *"        # every 4 hours
+    - cron: "0 0 * * *"          # once a day (older)
+
+  workflow_dispatch:
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install deps
+        run: npm install firebase-admin
+
+      - name: Run snapshot
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: node scripts/snapshot.js
+
+      - name: Commit snapshots
+        run: |
+          git config user.name "snapshot-bot"
+          git config user.email "snapshot@github.com"
+          git add snapshots
+          git commit -m "📸 Update task snapshots" || echo "No changes"
+          git push
