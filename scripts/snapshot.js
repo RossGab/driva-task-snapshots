@@ -79,6 +79,10 @@ async function run() {
   );
 
   console.log("✅ Snapshot script finished cleanly");
+
+  // 🔥 VERY IMPORTANT: close Firebase connections
+  await admin.app().delete();
+
   process.exit(0);
 }
 
