@@ -37,6 +37,7 @@ jobs:
       - name: Run snapshot
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          FORCE_RUN: ${{ github.event.inputs.force_run }}
         run: node scripts/snapshot.js
 
       - name: Commit snapshots
