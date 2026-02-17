@@ -1,13 +1,20 @@
 /**
  * Firebase → GitHub snapshot script
  * - One snapshot JSON per date (YYYYMMDD.json)
+ * - Reads ALL available dates from tasksByDate
  * - Frequency controlled by PH-time rules
- * - Guaranteed to exit
+ * - Manual runs can FORCE download
+ * - Guaranteed clean exit (no hanging)
  */
 
 const admin = require("firebase-admin");
 const fs = require("fs");
 const path = require("path");
+
+/* =========================
+   FLAGS
+========================= */
+const FORCE_RUN = process.env.FORCE_RUN === "1";
 
 /* =========================
    INIT FIREBASE
@@ -50,10 +57,10 @@ function daysAgoFromKey(dateKey) {
 }
 
 /* =========================
-   FREQUENCY RULES (YOUR LOGIC)
+   FREQUENCY RULES (PH TIME)
 ========================= */
 function shouldSnapshot(daysAgo, hourPH) {
-  // Only 6am–10pm
+  // Only between 6:00–22:00 PH
   if (hourPH < 6 || hourPH > 22) return false;
 
   if (daysAgo <= 1) return true;               // every 30 min
@@ -103,20 +110,24 @@ async function run() {
   const now = nowPH();
   const hourPH = now.getHours();
 
-  // 🔑 Read ALL available dates
+  // 🔑 Read ALL available dates from Firebase
   const allDatesSnap = await db.ref("tasksByDate").get();
   if (!allDatesSnap.exists()) {
     console.log("⚠️ No tasksByDate found");
     return;
   }
 
-  const dateKeys = Object.keys(allDatesSnap.val()).sort().reverse();
+  const dateKeys = Object.keys(allDatesSnap.val())
+    .sort()
+    .reverse();
 
   for (const dateKey of dateKeys) {
     const daysAgo = daysAgoFromKey(dateKey);
 
-    if (!shouldSnapshot(daysAgo, hourPH)) {
-      console.log(`⏭️ Skip ${dateKey} (daysAgo=${daysAgo}, hour=${hourPH})`);
+    if (!FORCE_RUN && !shouldSnapshot(daysAgo, hourPH)) {
+      console.log(
+        `⏭️ Skip ${dateKey} (daysAgo=${daysAgo}, hour=${hourPH})`
+      );
       continue;
     }
 
