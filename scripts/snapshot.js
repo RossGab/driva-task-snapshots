@@ -60,16 +60,16 @@ function daysAgoFromKey(dateKey) {
    FREQUENCY RULES (PH TIME)
 ========================= */
 function shouldSnapshot(daysAgo, hourPH) {
-  // Only between 6:00–22:00 PH
+  if (FORCE_RUN) return true; // 🔥 bypass all skips
+
+  // Only 6am–10pm
   if (hourPH < 6 || hourPH > 22) return false;
 
-  if (daysAgo <= 1) return true;               // every 30 min
-  if (daysAgo <= 3) return hourPH % 2 === 0;   // every 2 hrs
-  if (daysAgo <= 5) return hourPH % 3 === 0;   // every 3 hrs
-  if (daysAgo === 6) return hourPH % 4 === 0;  // every 4 hrs
-  if (daysAgo === 7) return hourPH % 5 === 0;  // every 5 hrs
+  if (daysAgo <= 1) return true;
+  if (daysAgo <= 3) return hourPH % 2 === 0;
+  if (daysAgo <= 5) return hourPH % 3 === 0;
+  if (daysAgo <= 7) return hourPH % 5 === 0;
 
-  // day 8+ → once a day at 6am
   return hourPH === 6;
 }
 
