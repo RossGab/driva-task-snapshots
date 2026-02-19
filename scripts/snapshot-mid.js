@@ -5,7 +5,7 @@
  * - Runs only 6:00 AM – 9:59 PM PH time
  * - FORCE_RUN=1 bypasses time restriction
  * - Writes one JSON per date (YYYYMMDD.json)
- * - Guaranteed clean exit
+ * - ✅ PH-safe, UTC-correct
  */
 
 const admin = require("firebase-admin");
@@ -20,9 +20,7 @@ const FORCE_RUN = process.env.FORCE_RUN === "1";
 /* =========================
    FIREBASE INIT
 ========================= */
-const serviceAccount = JSON.parse(
-  process.env.FIREBASE_SERVICE_ACCOUNT
-);
+const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
@@ -38,23 +36,43 @@ const SNAPSHOT_DIR = path.join(__dirname, "..", "snapshots");
 fs.mkdirSync(SNAPSHOT_DIR, { recursive: true });
 
 /* =========================
-   TIME HELPERS (PH)
+   TIME HELPERS (SAFE)
 ========================= */
-function nowPH() {
-  return new Date(
-    new Date().toLocaleString("en-US", { timeZone: "Asia/Manila" })
+
+// PH date key YYYYMMDD
+function todayPHKey() {
+  return new Date().toLocaleDateString("en-CA", {
+    timeZone: "Asia/Manila",
+  }).replace(/-/g, "");
+}
+
+// PH hour only
+function phHour() {
+  return Number(
+    new Date().toLocaleString("en-US", {
+      timeZone: "Asia/Manila",
+      hour: "numeric",
+      hour12: false,
+    })
   );
 }
 
-function phDate(daysAgo) {
-  const d = nowPH();
+// PH date key N days ago
+function phDateKey(daysAgo) {
+  const d = new Date(
+    new Date().toLocaleDateString("en-CA", {
+      timeZone: "Asia/Manila",
+    }) + "T00:00:00+08:00"
+  );
+
   d.setDate(d.getDate() - daysAgo);
+
   return d.toISOString().slice(0, 10).replace(/-/g, "");
 }
 
 function isWithinRunWindow() {
-  const hour = nowPH().getHours();
-  return hour >= 6 && hour <= 21; // 6AM–9PM
+  const h = phHour();
+  return h >= 6 && h <= 21; // 6AM–9PM PH
 }
 
 /* =========================
@@ -69,14 +87,10 @@ async function snapshotDate(dateKey) {
     return false;
   }
 
-  const taskIds = Object.keys(idsSnap.val());
   const tasks = {};
-
-  for (const id of taskIds) {
+  for (const id of Object.keys(idsSnap.val())) {
     const snap = await db.ref(`tasks/${id}`).get();
-    if (snap.exists()) {
-      tasks[id] = snap.val();
-    }
+    if (snap.exists()) tasks[id] = snap.val();
   }
 
   fs.writeFileSync(
@@ -84,7 +98,7 @@ async function snapshotDate(dateKey) {
     JSON.stringify(tasks, null, 2)
   );
 
-  console.log(`✅ Saved ${dateKey}.json (${taskIds.length} tasks)`);
+  console.log(`✅ Saved ${dateKey}.json (${Object.keys(tasks).length} tasks)`);
   return true;
 }
 
@@ -96,12 +110,13 @@ async function snapshotDate(dateKey) {
 
   if (!FORCE_RUN && !isWithinRunWindow()) {
     console.log("⏭️ Skipped (outside 6AM–9PM PH)");
+    await admin.app().delete();
     process.exit(0);
   }
 
   try {
-    await snapshotDate(phDate(6));
-    await snapshotDate(phDate(7));
+    await snapshotDate(phDateKey(6));
+    await snapshotDate(phDateKey(7));
 
     console.log("✅ Snapshot TODAY-6 → TODAY-7 completed");
   } catch (err) {
