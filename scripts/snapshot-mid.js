@@ -5,7 +5,9 @@
  * - Runs only 6:00 AM – 9:59 PM PH time
  * - FORCE_RUN=1 bypasses time restriction
  * - Writes one JSON per date (YYYYMMDD.json)
- * - ✅ PH-safe, UTC-correct
+ * - ✅ UTC-safe
+ * - ✅ PH-correct
+ * - ❌ No string-based Date parsing
  */
 
 const admin = require("firebase-admin");
@@ -36,38 +38,37 @@ const SNAPSHOT_DIR = path.join(__dirname, "..", "snapshots");
 fs.mkdirSync(SNAPSHOT_DIR, { recursive: true });
 
 /* =========================
-   TIME HELPERS (SAFE)
+   TIME HELPERS (BULLETPROOF)
 ========================= */
 
-// PH date key YYYYMMDD
-function todayPHKey() {
-  return new Date().toLocaleDateString("en-CA", {
+/**
+ * Returns PH date key (YYYYMMDD)
+ */
+function phDateKey(daysAgo = 0) {
+  const base = new Date();
+  base.setUTCDate(base.getUTCDate() - daysAgo);
+
+  return new Intl.DateTimeFormat("en-CA", {
     timeZone: "Asia/Manila",
-  }).replace(/-/g, "");
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  })
+    .format(base)
+    .replace(/-/g, "");
 }
 
-// PH hour only
+/**
+ * Returns PH hour (0–23)
+ */
 function phHour() {
   return Number(
-    new Date().toLocaleString("en-US", {
+    new Intl.DateTimeFormat("en-US", {
       timeZone: "Asia/Manila",
       hour: "numeric",
       hour12: false,
-    })
+    }).format(new Date())
   );
-}
-
-// PH date key N days ago
-function phDateKey(daysAgo) {
-  const d = new Date(
-    new Date().toLocaleDateString("en-CA", {
-      timeZone: "Asia/Manila",
-    }) + "T00:00:00+08:00"
-  );
-
-  d.setDate(d.getDate() - daysAgo);
-
-  return d.toISOString().slice(0, 10).replace(/-/g, "");
 }
 
 function isWithinRunWindow() {
