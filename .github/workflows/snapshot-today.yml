@@ -12,6 +12,11 @@ on:
     # Every 30 minutes (PH 6AM–9PM = UTC 22–13)
     - cron: "*/30 22-23,0-13 * * *"
 
+# 🔒 ADD THIS BLOCK (TOP LEVEL)
+concurrency:
+  group: snapshot-main
+  cancel-in-progress: false
+
 jobs:
   snapshot:
     runs-on: ubuntu-latest
