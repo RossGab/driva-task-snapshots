@@ -6,7 +6,9 @@
  * - FORCE_RUN=1 bypasses time restriction
  * - Writes one JSON per date (YYYYMMDD.json)
  * - DOES NOT touch latest.json
- * - ✅ UTC-safe (no double timezone conversion)
+ * - ✅ UTC-safe
+ * - ✅ PH-time correct
+ * - ✅ No locale-string Date parsing
  */
 
 const admin = require("firebase-admin");
@@ -37,26 +39,36 @@ const SNAPSHOT_DIR = path.join(__dirname, "..", "snapshots");
 fs.mkdirSync(SNAPSHOT_DIR, { recursive: true });
 
 /* =========================
-   TIME HELPERS (SAFE)
+   TIME HELPERS (TRULY SAFE)
 ========================= */
 
-// PH date key only (no Date math leakage)
-function phDateKey(daysAgo) {
-  const ph = new Date(
-    new Date().toLocaleString("en-CA", { timeZone: "Asia/Manila" })
-  );
-  ph.setDate(ph.getDate() - daysAgo);
-  return ph.toISOString().slice(0, 10).replace(/-/g, "");
+/**
+ * Returns YYYYMMDD based on PH date
+ */
+function phDateKey(daysAgo = 0) {
+  const base = new Date();
+  base.setUTCDate(base.getUTCDate() - daysAgo);
+
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Manila",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  })
+    .format(base)
+    .replace(/-/g, "");
 }
 
-// PH hour only for gating
+/**
+ * Returns PH hour (0–23)
+ */
 function phHour() {
   return Number(
-    new Date().toLocaleString("en-US", {
+    new Intl.DateTimeFormat("en-US", {
       timeZone: "Asia/Manila",
       hour: "numeric",
       hour12: false,
-    })
+    }).format(new Date())
   );
 }
 
@@ -77,10 +89,14 @@ async function snapshotDate(dateKey) {
     return false;
   }
 
+  const taskIds = Object.keys(idsSnap.val());
   const tasks = {};
-  for (const id of Object.keys(idsSnap.val())) {
+
+  for (const id of taskIds) {
     const snap = await db.ref(`tasks/${id}`).get();
-    if (snap.exists()) tasks[id] = snap.val();
+    if (snap.exists()) {
+      tasks[id] = snap.val();
+    }
   }
 
   fs.writeFileSync(
@@ -88,7 +104,7 @@ async function snapshotDate(dateKey) {
     JSON.stringify(tasks, null, 2)
   );
 
-  console.log(`✅ Saved ${dateKey}.json (${Object.keys(tasks).length} tasks)`);
+  console.log(`✅ Saved ${dateKey}.json (${taskIds.length} tasks)`);
   return true;
 }
 
