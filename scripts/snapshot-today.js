@@ -2,6 +2,7 @@
  * Snapshot TODAY & TODAY-1
  * - Runs only 6AM–9PM PH
  * - FORCE_RUN=1 bypasses time restriction
+ * - Writes snapshots/latest.json for freshness tracking
  */
 
 const admin = require("firebase-admin");
@@ -31,6 +32,8 @@ const db = admin.database();
 const SNAPSHOT_DIR = path.join(__dirname, "..", "snapshots");
 fs.mkdirSync(SNAPSHOT_DIR, { recursive: true });
 
+const LATEST_META_PATH = path.join(SNAPSHOT_DIR, "latest.json");
+
 /* =========================
    TIME HELPERS (PH)
 ========================= */
@@ -53,7 +56,7 @@ async function snapshotDate(dateKey) {
   const idsSnap = await db.ref(`tasksByDate/${dateKey}`).get();
   if (!idsSnap.exists()) {
     console.log(`⚠️ No tasks for ${dateKey}`);
-    return;
+    return false;
   }
 
   const tasks = {};
@@ -68,6 +71,24 @@ async function snapshotDate(dateKey) {
   );
 
   console.log(`✅ Saved ${dateKey}.json`);
+  return true;
+}
+
+/* =========================
+   WRITE latest.json
+========================= */
+function writeLatestMeta(latestDate) {
+  const meta = {
+    latestDate,
+    updatedAt: nowPH().toISOString(),
+  };
+
+  fs.writeFileSync(
+    LATEST_META_PATH,
+    JSON.stringify(meta, null, 2)
+  );
+
+  console.log("📦 Updated latest.json");
 }
 
 /* =========================
@@ -85,8 +106,24 @@ async function snapshotDate(dateKey) {
     process.exit(0);
   }
 
-  await snapshotDate(phDate(0)); // today
-  await snapshotDate(phDate(1)); // today-1
+  const todayKey = phDate(0);
+  const yesterdayKey = phDate(1);
+
+  let latestWritten = null;
+
+  if (await snapshotDate(todayKey)) {
+    latestWritten = todayKey;
+  }
+
+  if (await snapshotDate(yesterdayKey) && !latestWritten) {
+    latestWritten = yesterdayKey;
+  }
+
+  if (latestWritten) {
+    writeLatestMeta(latestWritten);
+  } else {
+    console.log("⚠️ No snapshots written, latest.json not updated");
+  }
 
   console.log("✅ Snapshot TODAY completed");
 
