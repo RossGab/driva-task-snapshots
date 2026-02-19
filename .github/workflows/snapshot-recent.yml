@@ -9,8 +9,13 @@ on:
         default: "0"
 
   schedule:
-    # Every 3 hours (PH 6AM–9PM)
+    # Every 3 hours (PH 6AM–9PM = UTC 22,1,4,7,10,13)
     - cron: "0 22,1,4,7,10,13 * * *"
+
+# 🔒 REQUIRED LOCK (same as other snapshot workflows)
+concurrency:
+  group: snapshot-main
+  cancel-in-progress: false
 
 jobs:
   snapshot:
