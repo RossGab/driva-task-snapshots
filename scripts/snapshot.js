@@ -5,7 +5,7 @@
  * - Reads ALL available dates from tasksByDate
  * - Frequency controlled by PH-time rules
  * - Manual runs can FORCE download
- * - Guaranteed clean exit (no hanging)
+ * - Guaranteed clean exit
  */
 
 const admin = require("firebase-admin");
@@ -15,7 +15,7 @@ const path = require("path");
 /* =========================
    FLAGS
 ========================= */
-const FORCE_RUN = process.env.FORCE_RUN === "0";
+const FORCE_RUN = process.env.FORCE_RUN === "1";
 
 /* =========================
    INIT FIREBASE
@@ -95,6 +95,7 @@ async function snapshotDate(dateKey) {
   const taskIds = Object.keys(idsSnap.val());
   const tasks = {};
 
+  // 🔥 Sequential read → avoids memory spikes
   for (const id of taskIds) {
     const snap = await db.ref(`tasks/${id}`).get();
     if (snap.exists()) {
@@ -117,7 +118,7 @@ async function run() {
   const now = nowPH();
   const hourPH = now.getHours();
 
-  // Read ALL available dates
+  // 🔑 Read ALL available dates
   const allDatesSnap = await db.ref("tasksByDate").get();
   if (!allDatesSnap.exists()) {
     console.log("⚠️ No tasksByDate found");
@@ -126,7 +127,7 @@ async function run() {
 
   const dateKeys = Object.keys(allDatesSnap.val())
     .sort()
-    .reverse();
+    .reverse(); // newest first
 
   for (const dateKey of dateKeys) {
     const daysAgo = daysAgoFromKey(dateKey);
