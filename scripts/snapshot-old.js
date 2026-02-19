@@ -5,7 +5,9 @@
  * - Runs once per day (6:00–6:59 AM PH)
  * - FORCE_RUN=1 bypasses time restriction
  * - Writes one JSON per date (YYYYMMDD.json)
- * - ✅ UTC-safe, PH-correct
+ * - ✅ UTC-safe
+ * - ✅ PH-correct
+ * - ❌ No locale-string Date parsing
  */
 
 const admin = require("firebase-admin");
@@ -36,35 +38,61 @@ const SNAPSHOT_DIR = path.join(__dirname, "..", "snapshots");
 fs.mkdirSync(SNAPSHOT_DIR, { recursive: true });
 
 /* =========================
-   TIME HELPERS (SAFE)
+   TIME HELPERS (BULLETPROOF)
 ========================= */
 
-// PH date key only (YYYYMMDD)
-function todayPHKey() {
-  return new Date().toLocaleDateString("en-CA", {
+/**
+ * Returns PH date key (YYYYMMDD)
+ */
+function phDateKey(daysAgo = 0) {
+  const base = new Date();
+  base.setUTCDate(base.getUTCDate() - daysAgo);
+
+  return new Intl.DateTimeFormat("en-CA", {
     timeZone: "Asia/Manila",
-  }).replace(/-/g, "");
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  })
+    .format(base)
+    .replace(/-/g, "");
 }
 
-// PH hour only
+/**
+ * Returns PH hour (0–23)
+ */
 function phHour() {
   return Number(
-    new Date().toLocaleString("en-US", {
+    new Intl.DateTimeFormat("en-US", {
       timeZone: "Asia/Manila",
       hour: "numeric",
       hour12: false,
-    })
+    }).format(new Date())
   );
 }
 
-// daysAgo computed via PH date keys (SAFE)
+/**
+ * Compute daysAgo using numeric math ONLY
+ */
 function daysAgoFromKey(dateKey) {
-  const today = todayPHKey();
-  const toDate = k =>
-    new Date(`${k.slice(0,4)}-${k.slice(4,6)}-${k.slice(6,8)}T00:00:00+08:00`);
+  const y = Number(dateKey.slice(0, 4));
+  const m = Number(dateKey.slice(4, 6)) - 1;
+  const d = Number(dateKey.slice(6, 8));
 
-  const diffMs = toDate(today) - toDate(dateKey);
-  return Math.floor(diffMs / 86400000);
+  // midnight PH expressed as UTC+8 offset
+  const targetUTC = Date.UTC(y, m, d) - 8 * 60 * 60 * 1000;
+
+  const now = new Date();
+  const todayPHMidnightUTC =
+    Date.UTC(
+      now.getUTCFullYear(),
+      now.getUTCMonth(),
+      now.getUTCDate()
+    ) - 8 * 60 * 60 * 1000;
+
+  return Math.floor(
+    (todayPHMidnightUTC - targetUTC) / 86400000
+  );
 }
 
 function isWithinRunWindow() {
@@ -86,7 +114,9 @@ async function snapshotDate(dateKey) {
   const tasks = {};
   for (const id of Object.keys(idsSnap.val())) {
     const snap = await db.ref(`tasks/${id}`).get();
-    if (snap.exists()) tasks[id] = snap.val();
+    if (snap.exists()) {
+      tasks[id] = snap.val();
+    }
   }
 
   fs.writeFileSync(
@@ -105,7 +135,7 @@ async function snapshotDate(dateKey) {
   console.log("📸 Snapshot DAY 8+ job started");
 
   if (!FORCE_RUN && !isWithinRunWindow()) {
-    console.log("⏭️ Skipped (not 6AM PH)");
+    console.log("⏭️ Skipped (not within 6AM PH window)");
     await admin.app().delete();
     process.exit(0);
   }
@@ -128,7 +158,7 @@ async function snapshotDate(dateKey) {
       }
     }
 
-    console.log(`✅ Snapshot DAY 8+ completed (${processed} dates)`);
+    console.log(`✅ Snapshot DAY 8+ completed (${processed} dates processed)`);
   } catch (err) {
     console.error("❌ Snapshot DAY 8+ failed:", err);
     process.exitCode = 1;
