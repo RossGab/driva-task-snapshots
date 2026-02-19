@@ -12,7 +12,7 @@ on:
     # Every 3 hours (PH 6AM–9PM = UTC 22,1,4,7,10,13)
     - cron: "0 22,1,4,7,10,13 * * *"
 
-# 🔒 REQUIRED LOCK (same as other snapshot workflows)
+# 🔒 REQUIRED LOCK (shared with other snapshot workflows)
 concurrency:
   group: snapshot-main
   cancel-in-progress: false
@@ -36,10 +36,23 @@ jobs:
           FORCE_RUN: ${{ github.event.inputs.force_run }}
         run: node scripts/snapshot-recent.js
 
-      - name: Commit
+      # ✅ SAFE COMMIT STEP
+      - name: Commit snapshots
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add snapshots
-          git commit -m "snapshot: recent" || echo "No changes"
+
+          # No changes → exit cleanly
+          if git diff --cached --quiet; then
+            echo "No snapshot changes"
+            exit 0
+          fi
+
+          git commit -m "snapshot: recent"
+
+          # 🔥 REQUIRED to avoid fetch-first errors
+          git pull --rebase origin main
+
           git push
