@@ -12,6 +12,11 @@ on:
     # 6:00 AM PH = 22:00 UTC
     - cron: "0 22 * * *"
 
+# 🔒 REQUIRED: shared lock for ALL snapshot workflows
+concurrency:
+  group: snapshot-main
+  cancel-in-progress: false
+
 jobs:
   snapshot:
     runs-on: ubuntu-latest
