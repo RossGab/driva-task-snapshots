@@ -1,7 +1,12 @@
+/**
+ * Snapshot TODAY-2 to TODAY-5
+ */
+
 const admin = require("firebase-admin");
 const fs = require("fs");
 const path = require("path");
 
+const FORCE_RUN = process.env.FORCE_RUN === "1";
 const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
 
 admin.initializeApp({
@@ -19,46 +24,45 @@ function nowPH() {
   );
 }
 
-function dateKey(daysAgo) {
+function phDate(daysAgo) {
   const d = nowPH();
   d.setDate(d.getDate() - daysAgo);
   return d.toISOString().slice(0, 10).replace(/-/g, "");
 }
 
-async function snapshot(dateKey) {
+function allowedHour() {
+  const h = nowPH().getHours();
+  return h >= 6 && h <= 21;
+}
+
+async function snapshotDate(dateKey) {
   const idsSnap = await db.ref(`tasksByDate/${dateKey}`).get();
   if (!idsSnap.exists()) return;
 
   const tasks = {};
   for (const id of Object.keys(idsSnap.val())) {
-    const s = await db.ref(`tasks/${id}`).get();
-    if (s.exists()) tasks[id] = s.val();
+    const snap = await db.ref(`tasks/${id}`).get();
+    if (snap.exists()) tasks[id] = snap.val();
   }
 
   fs.writeFileSync(
     path.join(SNAPSHOT_DIR, `${dateKey}.json`),
     JSON.stringify(tasks, null, 2)
   );
+
+  console.log(`✅ Saved ${dateKey}`);
 }
 
-async function run() {
-  const hour = nowPH().getHours();
-  if (hour < 6 || hour > 21) return;
-
-  for (let d = 4; d <= 7; d++) {
-    if ((d <= 5 && hour % 3 === 0) || (d > 5 && hour % 5 === 0)) {
-      await snapshot(dateKey(d));
-    }
-  }
-}
-
-run()
-  .then(async () => {
-    await admin.app().delete();
+(async () => {
+  if (!FORCE_RUN && !allowedHour()) {
+    console.log("⏭️ Outside run window");
     process.exit(0);
-  })
-  .catch(async e => {
-    console.error(e);
-    await admin.app().delete();
-    process.exit(1);
-  });
+  }
+
+  for (let d = 2; d <= 5; d++) {
+    await snapshotDate(phDate(d));
+  }
+
+  await admin.app().delete();
+  process.exit(0);
+})();
