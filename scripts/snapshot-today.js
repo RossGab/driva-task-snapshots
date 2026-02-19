@@ -3,6 +3,7 @@
  * - Runs only 6AM–9PM PH
  * - FORCE_RUN=1 bypasses time restriction
  * - Writes snapshots/latest.json for freshness tracking
+ * - ✅ UTC-safe (NO double timezone conversion)
  */
 
 const admin = require("firebase-admin");
@@ -35,18 +36,27 @@ fs.mkdirSync(SNAPSHOT_DIR, { recursive: true });
 const LATEST_META_PATH = path.join(SNAPSHOT_DIR, "latest.json");
 
 /* =========================
-   TIME HELPERS (PH)
+   TIME HELPERS (SAFE)
 ========================= */
-function nowPH() {
-  return new Date(
-    new Date().toLocaleString("en-US", { timeZone: "Asia/Manila" })
+
+// PH date key ONLY (no Date math leakage)
+function phDateKey(daysAgo = 0) {
+  const ph = new Date(
+    new Date().toLocaleString("en-CA", { timeZone: "Asia/Manila" })
   );
+  ph.setDate(ph.getDate() - daysAgo);
+  return ph.toISOString().slice(0, 10).replace(/-/g, "");
 }
 
-function phDate(daysAgo = 0) {
-  const d = nowPH();
-  d.setDate(d.getDate() - daysAgo);
-  return d.toISOString().slice(0, 10).replace(/-/g, "");
+// PH hour ONLY for gating
+function phHour() {
+  return Number(
+    new Date().toLocaleString("en-US", {
+      timeZone: "Asia/Manila",
+      hour: "numeric",
+      hour12: false,
+    })
+  );
 }
 
 /* =========================
@@ -75,19 +85,15 @@ async function snapshotDate(dateKey) {
 }
 
 /* =========================
-   WRITE latest.json
+   WRITE latest.json (UTC ONLY)
 ========================= */
 function writeLatestMeta(latestDate) {
   const meta = {
     latestDate,
-    updatedAt: nowPH().toISOString(),
+    updatedAt: new Date().toISOString(), // ✅ PURE UTC
   };
 
-  fs.writeFileSync(
-    LATEST_META_PATH,
-    JSON.stringify(meta, null, 2)
-  );
-
+  fs.writeFileSync(LATEST_META_PATH, JSON.stringify(meta, null, 2));
   console.log("📦 Updated latest.json");
 }
 
@@ -95,19 +101,18 @@ function writeLatestMeta(latestDate) {
    MAIN
 ========================= */
 (async () => {
-  const now = nowPH();
-  const hour = now.getHours();
+  const hourPH = phHour();
 
   console.log("📸 Snapshot TODAY job");
 
-  if (!FORCE_RUN && (hour < 6 || hour > 21)) {
+  if (!FORCE_RUN && (hourPH < 6 || hourPH > 21)) {
     console.log("⏭️ Skipped (outside 6AM–9PM PH)");
     await admin.app().delete();
     process.exit(0);
   }
 
-  const todayKey = phDate(0);
-  const yesterdayKey = phDate(1);
+  const todayKey = phDateKey(0);
+  const yesterdayKey = phDateKey(1);
 
   let latestWritten = null;
 
