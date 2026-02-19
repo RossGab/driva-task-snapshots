@@ -1,13 +1,29 @@
 /**
  * Snapshot TODAY-2 to TODAY-5
+ *
+ * - Covers days: today-2, today-3, today-4, today-5
+ * - Runs only 6:00 AM – 9:59 PM PH time
+ * - FORCE_RUN=1 bypasses time restriction
+ * - Writes one JSON per date (YYYYMMDD.json)
+ * - DOES NOT touch latest.json (by design)
+ * - Guaranteed clean exit (no hanging)
  */
 
 const admin = require("firebase-admin");
 const fs = require("fs");
 const path = require("path");
 
+/* =========================
+   FLAGS
+========================= */
 const FORCE_RUN = process.env.FORCE_RUN === "1";
-const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
+
+/* =========================
+   FIREBASE INIT
+========================= */
+const serviceAccount = JSON.parse(
+  process.env.FIREBASE_SERVICE_ACCOUNT
+);
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
@@ -15,9 +31,16 @@ admin.initializeApp({
 });
 
 const db = admin.database();
+
+/* =========================
+   SNAPSHOT DIR
+========================= */
 const SNAPSHOT_DIR = path.join(__dirname, "..", "snapshots");
 fs.mkdirSync(SNAPSHOT_DIR, { recursive: true });
 
+/* =========================
+   TIME HELPERS (PH)
+========================= */
 function nowPH() {
   return new Date(
     new Date().toLocaleString("en-US", { timeZone: "Asia/Manila" })
@@ -30,19 +53,32 @@ function phDate(daysAgo) {
   return d.toISOString().slice(0, 10).replace(/-/g, "");
 }
 
-function allowedHour() {
-  const h = nowPH().getHours();
-  return h >= 6 && h <= 21;
+function isWithinRunWindow() {
+  const hour = nowPH().getHours();
+  return hour >= 6 && hour <= 21; // 6AM–9PM
 }
 
+/* =========================
+   SNAPSHOT ONE DATE
+========================= */
 async function snapshotDate(dateKey) {
-  const idsSnap = await db.ref(`tasksByDate/${dateKey}`).get();
-  if (!idsSnap.exists()) return;
+  console.log(`📅 Snapshot ${dateKey}`);
 
+  const idsSnap = await db.ref(`tasksByDate/${dateKey}`).get();
+
+  if (!idsSnap.exists()) {
+    console.log(`⚠️ No tasks for ${dateKey}`);
+    return false;
+  }
+
+  const taskIds = Object.keys(idsSnap.val());
   const tasks = {};
-  for (const id of Object.keys(idsSnap.val())) {
+
+  for (const id of taskIds) {
     const snap = await db.ref(`tasks/${id}`).get();
-    if (snap.exists()) tasks[id] = snap.val();
+    if (snap.exists()) {
+      tasks[id] = snap.val();
+    }
   }
 
   fs.writeFileSync(
@@ -50,19 +86,35 @@ async function snapshotDate(dateKey) {
     JSON.stringify(tasks, null, 2)
   );
 
-  console.log(`✅ Saved ${dateKey}`);
+  console.log(`✅ Saved ${dateKey}.json (${taskIds.length} tasks)`);
+  return true;
 }
 
+/* =========================
+   MAIN
+========================= */
 (async () => {
-  if (!FORCE_RUN && !allowedHour()) {
-    console.log("⏭️ Outside run window");
+  console.log("📸 Snapshot TODAY-2 → TODAY-5 job started");
+
+  if (!FORCE_RUN && !isWithinRunWindow()) {
+    console.log("⏭️ Skipped (outside 6AM–9PM PH)");
     process.exit(0);
   }
 
-  for (let d = 2; d <= 5; d++) {
-    await snapshotDate(phDate(d));
-  }
+  try {
+    for (let daysAgo = 2; daysAgo <= 5; daysAgo++) {
+      const dateKey = phDate(daysAgo);
+      await snapshotDate(dateKey);
+    }
 
-  await admin.app().delete();
-  process.exit(0);
+    console.log("✅ Snapshot TODAY-2 → TODAY-5 completed");
+  } catch (err) {
+    console.error("❌ Snapshot failed:", err);
+    process.exitCode = 1;
+  } finally {
+    try {
+      await admin.app().delete();
+    } catch {}
+    process.exit();
+  }
 })();
