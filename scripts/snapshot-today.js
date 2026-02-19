@@ -1,9 +1,13 @@
 /**
  * Snapshot TODAY & TODAY-1
- * - Runs only 6AM–9PM PH
+ *
+ * - Runs only 6:00 AM – 9:59 PM PH time
  * - FORCE_RUN=1 bypasses time restriction
- * - Writes snapshots/latest.json for freshness tracking
- * - ✅ UTC-safe (NO double timezone conversion)
+ * - Writes snapshots/YYYYMMDD.json
+ * - Updates snapshots/latest.json
+ * - ✅ UTC-safe
+ * - ✅ PH-time correct
+ * - ✅ No locale-string Date parsing
  */
 
 const admin = require("firebase-admin");
@@ -36,26 +40,38 @@ fs.mkdirSync(SNAPSHOT_DIR, { recursive: true });
 const LATEST_META_PATH = path.join(SNAPSHOT_DIR, "latest.json");
 
 /* =========================
-   TIME HELPERS (SAFE)
+   TIME HELPERS (TRULY SAFE)
 ========================= */
 
-// PH date key ONLY (no Date math leakage)
+/**
+ * Returns YYYYMMDD based on PH date
+ * No Date parsing from strings
+ * No ISO math on fake dates
+ */
 function phDateKey(daysAgo = 0) {
-  const ph = new Date(
-    new Date().toLocaleString("en-CA", { timeZone: "Asia/Manila" })
-  );
-  ph.setDate(ph.getDate() - daysAgo);
-  return ph.toISOString().slice(0, 10).replace(/-/g, "");
+  const base = new Date();
+  base.setUTCDate(base.getUTCDate() - daysAgo);
+
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Manila",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  })
+    .format(base)
+    .replace(/-/g, "");
 }
 
-// PH hour ONLY for gating
+/**
+ * Returns PH hour (0–23)
+ */
 function phHour() {
   return Number(
-    new Date().toLocaleString("en-US", {
+    new Intl.DateTimeFormat("en-US", {
       timeZone: "Asia/Manila",
       hour: "numeric",
       hour12: false,
-    })
+    }).format(new Date())
   );
 }
 
@@ -63,16 +79,22 @@ function phHour() {
    SNAPSHOT ONE DATE
 ========================= */
 async function snapshotDate(dateKey) {
+  console.log(`📅 Snapshot ${dateKey}`);
+
   const idsSnap = await db.ref(`tasksByDate/${dateKey}`).get();
   if (!idsSnap.exists()) {
     console.log(`⚠️ No tasks for ${dateKey}`);
     return false;
   }
 
+  const taskIds = Object.keys(idsSnap.val());
   const tasks = {};
-  for (const id of Object.keys(idsSnap.val())) {
+
+  for (const id of taskIds) {
     const snap = await db.ref(`tasks/${id}`).get();
-    if (snap.exists()) tasks[id] = snap.val();
+    if (snap.exists()) {
+      tasks[id] = snap.val();
+    }
   }
 
   fs.writeFileSync(
@@ -80,17 +102,17 @@ async function snapshotDate(dateKey) {
     JSON.stringify(tasks, null, 2)
   );
 
-  console.log(`✅ Saved ${dateKey}.json`);
+  console.log(`✅ Saved ${dateKey}.json (${taskIds.length} tasks)`);
   return true;
 }
 
 /* =========================
-   WRITE latest.json (UTC ONLY)
+   WRITE latest.json (UTC)
 ========================= */
 function writeLatestMeta(latestDate) {
   const meta = {
     latestDate,
-    updatedAt: new Date().toISOString(), // ✅ PURE UTC
+    updatedAt: new Date().toISOString(), // ✅ canonical UTC
   };
 
   fs.writeFileSync(LATEST_META_PATH, JSON.stringify(meta, null, 2));
@@ -101,9 +123,9 @@ function writeLatestMeta(latestDate) {
    MAIN
 ========================= */
 (async () => {
-  const hourPH = phHour();
+  console.log("📸 Snapshot TODAY job started");
 
-  console.log("📸 Snapshot TODAY job");
+  const hourPH = phHour();
 
   if (!FORCE_RUN && (hourPH < 6 || hourPH > 21)) {
     console.log("⏭️ Skipped (outside 6AM–9PM PH)");
@@ -111,31 +133,34 @@ function writeLatestMeta(latestDate) {
     process.exit(0);
   }
 
-  const todayKey = phDateKey(0);
-  const yesterdayKey = phDateKey(1);
+  try {
+    const todayKey = phDateKey(0);
+    const yesterdayKey = phDateKey(1);
 
-  let latestWritten = null;
+    let latestWritten = null;
 
-  if (await snapshotDate(todayKey)) {
-    latestWritten = todayKey;
+    if (await snapshotDate(todayKey)) {
+      latestWritten = todayKey;
+    }
+
+    if (await snapshotDate(yesterdayKey) && !latestWritten) {
+      latestWritten = yesterdayKey;
+    }
+
+    if (latestWritten) {
+      writeLatestMeta(latestWritten);
+    } else {
+      console.log("⚠️ No snapshots written, latest.json not updated");
+    }
+
+    console.log("✅ Snapshot TODAY completed");
+  } catch (err) {
+    console.error("❌ Snapshot failed:", err);
+    process.exitCode = 1;
+  } finally {
+    try {
+      await admin.app().delete();
+    } catch {}
+    process.exit();
   }
-
-  if (await snapshotDate(yesterdayKey) && !latestWritten) {
-    latestWritten = yesterdayKey;
-  }
-
-  if (latestWritten) {
-    writeLatestMeta(latestWritten);
-  } else {
-    console.log("⚠️ No snapshots written, latest.json not updated");
-  }
-
-  console.log("✅ Snapshot TODAY completed");
-
-  await admin.app().delete();
-  process.exit(0);
-})().catch(async err => {
-  console.error("❌ Snapshot failed:", err);
-  try { await admin.app().delete(); } catch {}
-  process.exit(1);
-});
+})();
