@@ -1,21 +1,23 @@
 /**
  * Snapshot DRIVERS
  *
- * - Snapshots driver-related data
- * - Runs any time (lightweight)
- * - Writes:
- *   - snapshots/drivers/drivers.json
- *   - snapshots/drivers/driverStatus.json
- *   - snapshots/drivers/driverConfig.json
- *   - snapshots/drivers/latest.json
- *
+ * - Runs only 6:00 AM – 9:59 PM PH time
+ * - Writes snapshots/drivers.json
+ * - Updates snapshots/drivers-latest.json
+ * - FORCE_RUN=1 bypasses time restriction
  * - ✅ UTC-safe
- * - ✅ No date math bugs
+ * - ✅ PH-time correct
+ * - ✅ No locale-string Date parsing
  */
 
 const admin = require("firebase-admin");
 const fs = require("fs");
 const path = require("path");
+
+/* =========================
+   FLAGS
+========================= */
+const FORCE_RUN = process.env.FORCE_RUN === "1";
 
 /* =========================
    FIREBASE INIT
@@ -30,51 +32,99 @@ admin.initializeApp({
 const db = admin.database();
 
 /* =========================
-   OUTPUT DIRS
+   SNAPSHOT DIR
 ========================= */
-const BASE_DIR = path.join(__dirname, "..", "snapshots", "drivers");
-fs.mkdirSync(BASE_DIR, { recursive: true });
+const SNAPSHOT_DIR = path.join(__dirname, "..", "snapshots");
+fs.mkdirSync(SNAPSHOT_DIR, { recursive: true });
 
-const DRIVERS_PATH = path.join(BASE_DIR, "drivers.json");
-const STATUS_PATH = path.join(BASE_DIR, "driverStatus.json");
-const CONFIG_PATH = path.join(BASE_DIR, "driverConfig.json");
-const LATEST_PATH = path.join(BASE_DIR, "latest.json");
+const DRIVERS_PATH = path.join(SNAPSHOT_DIR, "drivers.json");
+const DRIVERS_META_PATH = path.join(
+  SNAPSHOT_DIR,
+  "drivers-latest.json"
+);
+
+/* =========================
+   TIME HELPERS (SAFE)
+========================= */
+
+/**
+ * Returns PH hour (0–23)
+ */
+function phHour() {
+  return Number(
+    new Intl.DateTimeFormat("en-US", {
+      timeZone: "Asia/Manila",
+      hour: "numeric",
+      hour12: false,
+    }).format(new Date())
+  );
+}
+
+/* =========================
+   SNAPSHOT DRIVERS
+========================= */
+async function snapshotDrivers() {
+  console.log("👤 Snapshot drivers started");
+
+  const snap = await db.ref("drivers").get();
+
+  if (!snap.exists()) {
+    console.log("⚠️ No drivers found");
+    return false;
+  }
+
+  const drivers = snap.val() || {};
+
+  fs.writeFileSync(
+    DRIVERS_PATH,
+    JSON.stringify(drivers, null, 2)
+  );
+
+  console.log(
+    `✅ Saved drivers.json (${Object.keys(drivers).length} drivers)`
+  );
+
+  return true;
+}
+
+/* =========================
+   WRITE META
+========================= */
+function writeDriversMeta() {
+  const meta = {
+    updatedAt: new Date().toISOString(), // ✅ canonical UTC
+  };
+
+  fs.writeFileSync(
+    DRIVERS_META_PATH,
+    JSON.stringify(meta, null, 2)
+  );
+
+  console.log("📦 Updated drivers-latest.json");
+}
 
 /* =========================
    MAIN
 ========================= */
 (async () => {
-  console.log("🚗 Driver snapshot started");
+  console.log("📸 Driver snapshot job started");
+
+  const hourPH = phHour();
+
+  if (!FORCE_RUN && (hourPH < 6 || hourPH > 21)) {
+    console.log("⏭️ Skipped (outside 6AM–9PM PH)");
+    await admin.app().delete();
+    process.exit(0);
+  }
 
   try {
-    // 1️⃣ Drivers
-    const driversSnap = await db.ref("drivers").get();
-    const drivers = driversSnap.val() || {};
+    const ok = await snapshotDrivers();
 
-    // 2️⃣ Driver Status (GPS / lastSeen)
-    const statusSnap = await db.ref("driverStatus").get();
-    const driverStatus = statusSnap.val() || {};
-
-    // 3️⃣ Driver UI Config
-    const configSnap = await db.ref("config/driverUI/jobTypes").get();
-    const driverConfig = configSnap.val() || {};
-
-    // 4️⃣ Write files
-    fs.writeFileSync(DRIVERS_PATH, JSON.stringify(drivers, null, 2));
-    fs.writeFileSync(STATUS_PATH, JSON.stringify(driverStatus, null, 2));
-    fs.writeFileSync(CONFIG_PATH, JSON.stringify(driverConfig, null, 2));
-
-    // 5️⃣ latest.json (UTC)
-    fs.writeFileSync(
-      LATEST_PATH,
-      JSON.stringify(
-        {
-          updatedAt: new Date().toISOString(),
-        },
-        null,
-        2
-      )
-    );
+    if (ok) {
+      writeDriversMeta();
+    } else {
+      console.log("⚠️ Driver snapshot not written");
+    }
 
     console.log("✅ Driver snapshot completed");
   } catch (err) {
