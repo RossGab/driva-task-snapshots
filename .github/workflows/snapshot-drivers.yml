@@ -13,7 +13,8 @@ on:
     # PH 6:00 AM – 9:59 PM  →  UTC 22–13
     - cron: "*/30 22-23,0-13 * * *"
 
-# 🔒 SHARED LOCK (prevents git push conflicts)
+# 🔒 GLOBAL LOCK — shared with ALL snapshot workflows
+# Ensures ONLY ONE snapshot runs at a time
 concurrency:
   group: snapshot-main
   cancel-in-progress: false
@@ -23,29 +24,46 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      # 1️⃣ Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
+      # 2️⃣ Setup Node
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
 
+      # 3️⃣ Install deps
       - name: Install dependencies
         run: npm install firebase-admin
 
+      # 4️⃣ Run snapshot script
       - name: Run driver snapshot
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           FORCE_RUN: ${{ github.event.inputs.force_run }}
         run: node scripts/snapshot-drivers.js
 
-      - name: Commit snapshot
+      # 5️⃣ Commit & push safely (REBASE FIRST)
+      - name: Commit driver snapshots
         run: |
+          set -e
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add snapshots/drivers.json snapshots/drivers-latest.json
-          git commit -m "snapshot: drivers" || echo "No changes"
+
+          # 🧼 No changes → exit cleanly
+          if git diff --cached --quiet; then
+            echo "No driver snapshot changes"
+            exit 0
+          fi
+
+          git commit -m "snapshot: drivers"
+
+          # 🔥 REQUIRED: sync with any snapshot committed before us
+          git pull --rebase origin main
 
           git push
