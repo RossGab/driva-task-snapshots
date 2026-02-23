@@ -113344,6 +113344,7 @@
     "ZIPCODE": "",
     "createdAt": "2026-02-23T08:50:51",
     "driverId": "MMS-CRS29",
+    "lastUploadAttemptAt": "2026-02-23T23:13:24.665Z",
     "rowIndex": 2,
     "status": "PENDING",
     "uploadBatch": 1771807851051
@@ -223821,6 +223822,7 @@
     "ZIPCODE": "",
     "createdAt": "2026-02-23T12:02:53",
     "driverId": "MMS-BILL30",
+    "lastUploadAttemptAt": "2026-02-23T22:59:30.742Z",
     "rowIndex": 71,
     "status": "PENDING",
     "uploadBatch": 1771819373427
@@ -223842,6 +223844,7 @@
     "ZIPCODE": "",
     "createdAt": "2026-02-23T12:02:53",
     "driverId": "MMS-BILL30",
+    "lastUploadAttemptAt": "2026-02-23T22:59:24.186Z",
     "rowIndex": 72,
     "status": "PENDING",
     "uploadBatch": 1771819373427
@@ -223863,6 +223866,7 @@
     "ZIPCODE": "",
     "createdAt": "2026-02-23T12:02:53",
     "driverId": "MMS-BILL30",
+    "lastUploadAttemptAt": "2026-02-23T22:59:27.240Z",
     "rowIndex": 73,
     "status": "PENDING",
     "uploadBatch": 1771819373427
