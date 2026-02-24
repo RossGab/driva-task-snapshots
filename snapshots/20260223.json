@@ -67431,6 +67431,7 @@
     "ZIPCODE": "",
     "createdAt": "2026-02-23T08:33:24",
     "driverId": "MMS-BILL39",
+    "lastUploadAttemptAt": "2026-02-24T11:07:08.437Z",
     "rowIndex": 2419,
     "status": "PENDING",
     "uploadBatch": 1771806804878
@@ -67494,6 +67495,7 @@
     "ZIPCODE": "",
     "createdAt": "2026-02-23T08:33:24",
     "driverId": "MMS-BILL39",
+    "lastUploadAttemptAt": "2026-02-24T11:07:11.446Z",
     "rowIndex": 2421,
     "status": "PENDING",
     "uploadBatch": 1771806804878
@@ -67515,6 +67517,7 @@
     "ZIPCODE": "",
     "createdAt": "2026-02-23T08:33:24",
     "driverId": "MMS-BILL39",
+    "lastUploadAttemptAt": "2026-02-24T11:07:16.446Z",
     "rowIndex": 2422,
     "status": "PENDING",
     "uploadBatch": 1771806804878
@@ -67536,6 +67539,7 @@
     "ZIPCODE": "",
     "createdAt": "2026-02-23T08:33:24",
     "driverId": "MMS-BILL39",
+    "lastUploadAttemptAt": "2026-02-24T11:07:17.737Z",
     "rowIndex": 2423,
     "status": "PENDING",
     "uploadBatch": 1771806804878
@@ -107414,7 +107418,7 @@
     "ZIPCODE": "",
     "createdAt": "2026-02-23T08:40:10",
     "driverId": "MMS-BILL11",
-    "lastUploadAttemptAt": "2026-02-24T08:57:11.823Z",
+    "lastUploadAttemptAt": "2026-02-24T10:17:35.192Z",
     "rowIndex": 195,
     "status": "PENDING",
     "uploadBatch": 1771807210771
@@ -113467,7 +113471,7 @@
     "ZIPCODE": "",
     "createdAt": "2026-02-23T08:50:51",
     "driverId": "MMS-BILL43",
-    "lastUploadAttemptAt": "2026-02-24T10:03:01.187Z",
+    "lastUploadAttemptAt": "2026-02-24T10:03:50.383Z",
     "rowIndex": 1001,
     "status": "PENDING",
     "uploadBatch": 1771807851051
@@ -113489,7 +113493,7 @@
     "ZIPCODE": "",
     "createdAt": "2026-02-23T08:50:51",
     "driverId": "MMS-BILL43",
-    "lastUploadAttemptAt": "2026-02-24T10:03:03.431Z",
+    "lastUploadAttemptAt": "2026-02-24T10:03:54.581Z",
     "rowIndex": 1002,
     "status": "PENDING",
     "uploadBatch": 1771807851051
@@ -113511,7 +113515,7 @@
     "ZIPCODE": "",
     "createdAt": "2026-02-23T08:50:51",
     "driverId": "MMS-BILL43",
-    "lastUploadAttemptAt": "2026-02-24T10:02:54.525Z",
+    "lastUploadAttemptAt": "2026-02-24T10:03:58.320Z",
     "rowIndex": 1003,
     "status": "PENDING",
     "uploadBatch": 1771807851051
