@@ -9,8 +9,8 @@ on:
         default: "0"
 
   schedule:
-    # Every 3 hours (PH 6AM–9PM = UTC 22,1,4,7,10,13)
-    - cron: "0 22,1,4,7,10,13 * * *"
+  # 3× per day (PH 6AM, 12PM, 6PM)
+    - cron: "0 22,4,10 * * *"
 
 # 🔒 REQUIRED LOCK (shared with other snapshot workflows)
 concurrency:
