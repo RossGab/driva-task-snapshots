@@ -9,8 +9,8 @@ on:
         default: "0"
 
   schedule:
-    # Every 5 hours (PH 6AM–9PM = UTC 22,3,8,13)
-    - cron: "0 22,3,8,13 * * *"
+  # 2× per day (PH 6AM and 6PM)
+    - cron: "0 22,10 * * *"
 
 # 🔒 REQUIRED: shared lock for ALL snapshot workflows
 concurrency:
