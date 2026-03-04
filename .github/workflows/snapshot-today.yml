@@ -4,12 +4,14 @@ on:
   workflow_dispatch:
     inputs:
       force_run:
-        description: "Force run outside hours (1 = yes)"
+        description: "Force run outside hours"
         required: false
         default: "0"
 
+  repository_dispatch:
+    types: [trigger-snapshot]
+
   schedule:
-    # Every 30 minutes (PH 6AM–9PM = UTC 22–13)
     - cron: "*/30 22-23,0-13 * * *"
 
 # 🔒 Global lock for ALL snapshot workflows
