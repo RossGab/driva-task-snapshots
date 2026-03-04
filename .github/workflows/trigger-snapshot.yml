@@ -1,4 +1,4 @@
-name: Trigger Snapshot
+name: Trigger Snapshot From Dashboard
 
 on:
   repository_dispatch:
@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Trigger snapshot workflow
+      - name: Trigger main snapshot workflow
         run: |
           curl -X POST \
-          -H "Authorization: Bearer ${{ secrets.SNAPSHOT_TOKEN }}" \
+          -H "Authorization: Bearer ${{ secrets.SNAPSHOT_TRIGGER_TOKEN }}" \
           -H "Accept: application/vnd.github+json" \
-          https://api.github.com/repos/${{ github.repository }}/actions/workflows/snapshot-today.yml/dispatches \
+          https://api.github.com/repos/RossGab/driva-task-snapshots/actions/workflows/snapshot-today.yml/dispatches \
           -d '{"ref":"main","inputs":{"force_run":"1"}}'
