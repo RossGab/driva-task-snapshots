@@ -1,0 +1,18 @@
+name: Trigger Snapshot
+
+on:
+  repository_dispatch:
+    types: [trigger-snapshot]
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger snapshot workflow
+        run: |
+          curl -X POST \
+          -H "Authorization: Bearer ${{ secrets.SNAPSHOT_TOKEN }}" \
+          -H "Accept: application/vnd.github+json" \
+          https://api.github.com/repos/${{ github.repository }}/actions/workflows/snapshot-today.yml/dispatches \
+          -d '{"ref":"main","inputs":{"force_run":"1"}}'
