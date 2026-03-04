@@ -89,6 +89,16 @@
     "updatedAt": "2026-02-23T02:57:31.356Z",
     "vehicle": ""
   },
+  "AUDIT19": {
+    "address": "",
+    "contact": "",
+    "createdAt": "2026-03-04T01:05:15.223Z",
+    "driverCode": "AUDIT19",
+    "name": "JOHN CARLO LOMIBAO",
+    "team": "",
+    "updatedAt": "2026-03-04T01:05:15.223Z",
+    "vehicle": ""
+  },
   "AUDIT3": {
     "address": "",
     "contact": "",
@@ -707,6 +717,16 @@
     "name": "ALBERTO DITABLAN",
     "team": "",
     "updatedAt": "2026-03-03T00:24:44.010Z",
+    "vehicle": ""
+  },
+  "MMS-CRS18": {
+    "address": "",
+    "contact": "-",
+    "createdAt": "2026-03-04T00:28:48.004Z",
+    "driverCode": "MMS-CRS18",
+    "name": "LEMUEL JUINIO",
+    "team": "",
+    "updatedAt": "2026-03-04T00:28:48.004Z",
     "vehicle": ""
   },
   "MMS-CRS2": {
