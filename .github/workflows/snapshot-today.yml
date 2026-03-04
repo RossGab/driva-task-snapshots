@@ -22,20 +22,20 @@ jobs:
 
     steps:
 
-      # 🔒 PREVENT MULTIPLE SNAPSHOT-TODAY RUNS
-      - name: Abort if another snapshot-today is running
+      # 🔒 PREVENT MULTIPLE SNAPSHOT-TODAY RUNS (RUNNING OR QUEUED)
+      - name: Abort if another snapshot-today is running or queued
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           RUNNING=$(gh run list \
             --workflow snapshot-today.yml \
-            --status in_progress \
+            --status in_progress,queued \
             --limit 5 \
             --json databaseId \
             | jq length)
 
           if [ "$RUNNING" -gt 1 ]; then
-            echo "Another snapshot-today is already running. Exiting."
+            echo "Another snapshot-today is already running or queued. Exiting."
             exit 0
           fi
 
