@@ -4,17 +4,14 @@ on:
   workflow_dispatch:
     inputs:
       force_run:
-        description: "Force run outside hours"
+        description: "Force run outside hours (1 = yes)"
         required: false
         default: "0"
 
-  repository_dispatch:
-    types: [trigger-snapshot]
-
   schedule:
-    - cron: "*/30 22-23,0-13 * * *"
+  # Every 30 minutes (PH 6AM – 12AM)
+    - cron: "*/30 22-23,0-16 * * *"
 
-# 🔒 Global lock for ALL snapshot workflows
 concurrency:
   group: snapshot-main
   cancel-in-progress: false
@@ -24,6 +21,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+      # 🔒 PREVENT MULTIPLE SNAPSHOT-TODAY RUNS
+      - name: Abort if another snapshot-today is running
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          RUNNING=$(gh run list \
+            --workflow snapshot-today.yml \
+            --status in_progress \
+            --limit 5 \
+            --json databaseId \
+            | jq length)
+
+          if [ "$RUNNING" -gt 1 ]; then
+            echo "Another snapshot-today is already running. Exiting."
+            exit 0
+          fi
+
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
@@ -38,7 +53,6 @@ jobs:
           FORCE_RUN: ${{ github.event.inputs.force_run }}
         run: node scripts/snapshot-today.js
 
-      # ✅ FIXED COMMIT STEP
       - name: Commit snapshots
         run: |
           git config user.name "github-actions[bot]"
@@ -46,7 +60,6 @@ jobs:
 
           git add snapshots
 
-          # Nothing changed → exit cleanly
           if git diff --cached --quiet; then
             echo "No snapshot changes"
             exit 0
@@ -54,7 +67,6 @@ jobs:
 
           git commit -m "snapshot: today"
 
-          # 🔥 THIS IS THE MISSING PIECE
           git pull --rebase origin main
 
           git push
