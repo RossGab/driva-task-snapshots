@@ -32799,6 +32799,7 @@
     "ZIPCODE": "",
     "createdAt": "2026-03-04T08:51:58",
     "driverId": "AUDIT17",
+    "lastUploadAttemptAt": "2026-03-05T04:52:57.655Z",
     "rowIndex": 36,
     "status": "PENDING",
     "uploadBatch": 1772585518634
