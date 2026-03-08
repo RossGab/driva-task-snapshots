@@ -29646,9 +29646,14 @@
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
     "driverId": "MMS-BILL31",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1772973964068.jpg",
+    "photo1TakenAt": "2026-03-08T09:36:48.317Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_61%2Fphoto_1_1772973964068.jpg?alt=media&token=ce56ce14-e29c-4702-9a5d-1f9c08470fb0",
     "rowIndex": 62,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-08T12:46:06.454Z"
   },
   "TASK_1772931969080_62": {
     "ACCOUNTNUMBER": "10723318",
@@ -29667,9 +29672,14 @@
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
     "driverId": "MMS-BILL31",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1772973967287.jpg",
+    "photo1TakenAt": "2026-03-08T09:37:03.806Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_62%2Fphoto_1_1772973967287.jpg?alt=media&token=b492624d-1b60-4b2c-8227-1670fa574fb3",
     "rowIndex": 63,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-08T12:46:09.658Z"
   },
   "TASK_1772931969080_63": {
     "ACCOUNTNUMBER": "13902191",
@@ -29688,9 +29698,14 @@
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
     "driverId": "MMS-BILL31",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1772973970469.jpg",
+    "photo1TakenAt": "2026-03-08T09:37:33.563Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_63%2Fphoto_1_1772973970469.jpg?alt=media&token=804888b2-db28-4c96-8bdb-1ce0af6e8f6e",
     "rowIndex": 64,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-08T12:46:12.714Z"
   },
   "TASK_1772931969080_7": {
     "ACCOUNTNUMBER": "11174668",
