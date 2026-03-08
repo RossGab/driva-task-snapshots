@@ -28399,9 +28399,14 @@
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
     "driverId": "MMS-BILL29",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1772976913466.jpg",
+    "photo1TakenAt": "2026-03-08T13:35:06.768Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_0%2Fphoto_1_1772976913466.jpg?alt=media&token=ad1b2d79-8096-4581-a231-7d421d155bdb",
     "rowIndex": 1,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-08T13:35:16.692Z"
   },
   "TASK_1772931969080_1": {
     "ACCOUNTNUMBER": "10710386",
