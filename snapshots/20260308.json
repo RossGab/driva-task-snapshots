@@ -28478,10 +28478,17 @@
     "SEQUENCE": "60",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "White",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773025664145.jpg",
+    "photo1TakenAt": "2026-03-09T03:04:23.081Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_10%2Fphoto_1_1773025664145.jpg?alt=media&token=22b6f99d-51a3-4915-983f-e5bfc6dd2f4f",
     "rowIndex": 11,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:07:46.652Z"
   },
   "TASK_1772931969080_11": {
     "ACCOUNTNUMBER": "11174864",
@@ -28499,10 +28506,17 @@
     "SEQUENCE": "70",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "White",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773025667468.jpg",
+    "photo1TakenAt": "2026-03-09T03:04:57.212Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_11%2Fphoto_1_1773025667468.jpg?alt=media&token=8ad4cc02-de47-4496-a7ef-7e9f01560509",
     "rowIndex": 12,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:07:48.875Z"
   },
   "TASK_1772931969080_12": {
     "ACCOUNTNUMBER": "21224319",
@@ -28520,10 +28534,17 @@
     "SEQUENCE": "80",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "White",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773025669696.jpg",
+    "photo1TakenAt": "2026-03-09T03:05:24.850Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_12%2Fphoto_1_1773025669696.jpg?alt=media&token=7fcc7105-5cac-4c54-bf33-4f68018a934e",
     "rowIndex": 13,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:07:51.118Z"
   },
   "TASK_1772931969080_13": {
     "ACCOUNTNUMBER": "11175024",
@@ -28541,10 +28562,17 @@
     "SEQUENCE": "90",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Brown",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773025671910.jpg",
+    "photo1TakenAt": "2026-03-09T03:05:57.813Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_13%2Fphoto_1_1773025671910.jpg?alt=media&token=491e4638-c123-49f0-b0f3-a382a6512a83",
     "rowIndex": 14,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:07:54.194Z"
   },
   "TASK_1772931969080_14": {
     "ACCOUNTNUMBER": "11175177",
@@ -28562,10 +28590,17 @@
     "SEQUENCE": "100",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Brown",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773025674986.jpg",
+    "photo1TakenAt": "2026-03-09T03:06:28.566Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_14%2Fphoto_1_1773025674986.jpg?alt=media&token=9dc339cf-b5ae-45c7-b499-c64e6ebb8bd6",
     "rowIndex": 15,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:07:56.626Z"
   },
   "TASK_1772931969080_15": {
     "ACCOUNTNUMBER": "11175275",
@@ -28583,10 +28618,17 @@
     "SEQUENCE": "110",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Brown",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773025677447.jpg",
+    "photo1TakenAt": "2026-03-09T03:06:57.212Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_15%2Fphoto_1_1773025677447.jpg?alt=media&token=c86fdc76-2d63-4a8d-aed2-13af136decef",
     "rowIndex": 16,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:07:58.896Z"
   },
   "TASK_1772931969080_16": {
     "ACCOUNTNUMBER": "11175373",
@@ -28604,10 +28646,17 @@
     "SEQUENCE": "120",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Brown",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773025679703.jpg",
+    "photo1TakenAt": "2026-03-09T03:07:21.557Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_16%2Fphoto_1_1773025679703.jpg?alt=media&token=12ad6359-e080-45be-ace0-eeca7d93e627",
     "rowIndex": 17,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:08:01.165Z"
   },
   "TASK_1772931969080_17": {
     "ACCOUNTNUMBER": "11175471",
@@ -28625,10 +28674,17 @@
     "SEQUENCE": "130",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "White",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773025849447.jpg",
+    "photo1TakenAt": "2026-03-09T03:08:45.569Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_17%2Fphoto_1_1773025849447.jpg?alt=media&token=3e2ef039-4aad-4e02-8390-fa5e9283334c",
     "rowIndex": 18,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:10:53.506Z"
   },
   "TASK_1772931969080_18": {
     "ACCOUNTNUMBER": "11175578",
@@ -28646,10 +28702,17 @@
     "SEQUENCE": "140",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "White",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773025854372.jpg",
+    "photo1TakenAt": "2026-03-09T03:09:15.400Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_18%2Fphoto_1_1773025854372.jpg?alt=media&token=df22bfaf-b146-4698-ae59-d05fbe139973",
     "rowIndex": 19,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:10:56.939Z"
   },
   "TASK_1772931969080_19": {
     "ACCOUNTNUMBER": "11173801",
@@ -28667,10 +28730,17 @@
     "SEQUENCE": "150",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "White",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773025857759.jpg",
+    "photo1TakenAt": "2026-03-09T03:10:01.713Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_19%2Fphoto_1_1773025857759.jpg?alt=media&token=98bf3e3a-0b43-4e8d-a166-5607ec05007f",
     "rowIndex": 20,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:11:00.391Z"
   },
   "TASK_1772931969080_2": {
     "ACCOUNTNUMBER": "14701423",
@@ -28709,10 +28779,17 @@
     "SEQUENCE": "160",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Brown",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773025861224.jpg",
+    "photo1TakenAt": "2026-03-09T03:10:36.637Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_20%2Fphoto_1_1773025861224.jpg?alt=media&token=9ca0a4aa-a72c-493f-a33b-1a060830f2d4",
     "rowIndex": 21,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:11:04.996Z"
   },
   "TASK_1772931969080_21": {
     "ACCOUNTNUMBER": "11173909",
@@ -28730,10 +28807,17 @@
     "SEQUENCE": "170",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Brown",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773025959314.jpg",
+    "photo1TakenAt": "2026-03-09T03:11:24.076Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_21%2Fphoto_1_1773025959314.jpg?alt=media&token=168d8ff5-7d50-46b0-983e-bb5cf0234760",
     "rowIndex": 22,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:12:41.889Z"
   },
   "TASK_1772931969080_22": {
     "ACCOUNTNUMBER": "11173954",
@@ -28751,10 +28835,17 @@
     "SEQUENCE": "180",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Brown",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773025962703.jpg",
+    "photo1TakenAt": "2026-03-09T03:11:57.831Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_22%2Fphoto_1_1773025962703.jpg?alt=media&token=7a32a343-5181-4e49-90d7-1f1f47c0fbc2",
     "rowIndex": 23,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:12:45.285Z"
   },
   "TASK_1772931969080_23": {
     "ACCOUNTNUMBER": "11173990",
@@ -28772,10 +28863,17 @@
     "SEQUENCE": "190",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Wooden",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773025966122.jpg",
+    "photo1TakenAt": "2026-03-09T03:12:25.877Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_23%2Fphoto_1_1773025966122.jpg?alt=media&token=4f469c9f-0c65-4e05-9c05-ead2ea1940cd",
     "rowIndex": 24,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:12:48.365Z"
   },
   "TASK_1772931969080_24": {
     "ACCOUNTNUMBER": "17137812",
@@ -28793,10 +28891,17 @@
     "SEQUENCE": "200",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Silver",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773026810772.jpg",
+    "photo1TakenAt": "2026-03-09T03:20:52.577Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_24%2Fphoto_1_1773026810772.jpg?alt=media&token=17822906-51b8-48d3-9dab-102739f02aff",
     "rowIndex": 25,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:26:55.557Z"
   },
   "TASK_1772931969080_25": {
     "ACCOUNTNUMBER": "11174105",
@@ -28814,10 +28919,17 @@
     "SEQUENCE": "210",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Brown",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773026816751.jpg",
+    "photo1TakenAt": "2026-03-09T03:21:36.997Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_25%2Fphoto_1_1773026816751.jpg?alt=media&token=6601edcb-0bf8-4bef-a65a-cf6d12df34f1",
     "rowIndex": 26,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:26:59.977Z"
   },
   "TASK_1772931969080_26": {
     "ACCOUNTNUMBER": "11174169",
@@ -28835,10 +28947,17 @@
     "SEQUENCE": "220",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "White",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773026820909.jpg",
+    "photo1TakenAt": "2026-03-09T03:22:08.643Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_26%2Fphoto_1_1773026820909.jpg?alt=media&token=c6678bef-ba98-45d5-afae-8523af29328c",
     "rowIndex": 27,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:27:04.173Z"
   },
   "TASK_1772931969080_27": {
     "ACCOUNTNUMBER": "11174203",
@@ -28856,10 +28975,17 @@
     "SEQUENCE": "240",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Silver",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773026825106.jpg",
+    "photo1TakenAt": "2026-03-09T03:22:36.646Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_27%2Fphoto_1_1773026825106.jpg?alt=media&token=7d90a7ba-f3b5-4152-a6a1-73bd13cc124f",
     "rowIndex": 28,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:27:07.963Z"
   },
   "TASK_1772931969080_28": {
     "ACCOUNTNUMBER": "11174258",
@@ -28877,10 +29003,17 @@
     "SEQUENCE": "250",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Wooden",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773026828884.jpg",
+    "photo1TakenAt": "2026-03-09T03:23:04.507Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_28%2Fphoto_1_1773026828884.jpg?alt=media&token=4fa47042-96c2-43a2-bc56-44e3b98d836c",
     "rowIndex": 29,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:27:11.710Z"
   },
   "TASK_1772931969080_29": {
     "ACCOUNTNUMBER": "11175621",
@@ -28898,10 +29031,17 @@
     "SEQUENCE": "260",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Brown",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773026832719.jpg",
+    "photo1TakenAt": "2026-03-09T03:23:36.942Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_29%2Fphoto_1_1773026832719.jpg?alt=media&token=de659cc5-880d-4262-aa97-568763f503f7",
     "rowIndex": 30,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:27:15.330Z"
   },
   "TASK_1772931969080_3": {
     "ACCOUNTNUMBER": "21947048",
@@ -28940,10 +29080,17 @@
     "SEQUENCE": "270",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Red",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773026836281.jpg",
+    "photo1TakenAt": "2026-03-09T03:24:05.441Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_30%2Fphoto_1_1773026836281.jpg?alt=media&token=7445df87-bee3-4463-9b7f-d8cd27c43e67",
     "rowIndex": 31,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:27:19.164Z"
   },
   "TASK_1772931969080_31": {
     "ACCOUNTNUMBER": "11175426",
@@ -28961,10 +29108,17 @@
     "SEQUENCE": "280",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Brown",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773026840057.jpg",
+    "photo1TakenAt": "2026-03-09T03:24:41.544Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_31%2Fphoto_1_1773026840057.jpg?alt=media&token=71678c5e-ebbe-4728-9058-f21dee464433",
     "rowIndex": 32,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:27:22.883Z"
   },
   "TASK_1772931969080_32": {
     "ACCOUNTNUMBER": "18611316",
@@ -28982,10 +29136,17 @@
     "SEQUENCE": "290",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Brown",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773026843959.jpg",
+    "photo1TakenAt": "2026-03-09T03:25:08.399Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_32%2Fphoto_1_1773026843959.jpg?alt=media&token=fb9f3ab0-5436-42e2-bf76-3baec2f88abb",
     "rowIndex": 33,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:27:28.230Z"
   },
   "TASK_1772931969080_33": {
     "ACCOUNTNUMBER": "11175220",
@@ -29003,10 +29164,17 @@
     "SEQUENCE": "300",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "White",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773026849712.jpg",
+    "photo1TakenAt": "2026-03-09T03:25:38.619Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_33%2Fphoto_1_1773026849712.jpg?alt=media&token=51135ca8-e212-4d6a-a12f-aad6f2b1e0ff",
     "rowIndex": 34,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:27:33.763Z"
   },
   "TASK_1772931969080_34": {
     "ACCOUNTNUMBER": "11175122",
@@ -29024,10 +29192,17 @@
     "SEQUENCE": "310",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Wooden",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773026854794.jpg",
+    "photo1TakenAt": "2026-03-09T03:26:04.411Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_34%2Fphoto_1_1773026854794.jpg?alt=media&token=61ed83e4-f607-4153-bbd7-45449f1dc6e9",
     "rowIndex": 35,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:27:37.918Z"
   },
   "TASK_1772931969080_35": {
     "ACCOUNTNUMBER": "11175079",
@@ -29045,10 +29220,17 @@
     "SEQUENCE": "320",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Wooden",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773026858992.jpg",
+    "photo1TakenAt": "2026-03-09T03:26:26.938Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_35%2Fphoto_1_1773026858992.jpg?alt=media&token=15636c8d-7a44-4465-8c31-2d458a9a1256",
     "rowIndex": 36,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:27:43.494Z"
   },
   "TASK_1772931969080_36": {
     "ACCOUNTNUMBER": "15130779",
@@ -29066,10 +29248,17 @@
     "SEQUENCE": "321",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "White",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773027957459.jpg",
+    "photo1TakenAt": "2026-03-09T03:30:53.920Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_36%2Fphoto_1_1773027957459.jpg?alt=media&token=5a130e39-726b-43a4-a166-68c5d5603e86",
     "rowIndex": 37,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:46:00.287Z"
   },
   "TASK_1772931969080_37": {
     "ACCOUNTNUMBER": "11175676",
@@ -29087,10 +29276,17 @@
     "SEQUENCE": "340",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Brown",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773027961217.jpg",
+    "photo1TakenAt": "2026-03-09T03:35:08.487Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_37%2Fphoto_1_1773027961217.jpg?alt=media&token=a8eaec95-090e-49a6-ad91-b94d5fc51538",
     "rowIndex": 38,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:46:03.291Z"
   },
   "TASK_1772931969080_38": {
     "ACCOUNTNUMBER": "11175774",
@@ -29108,10 +29304,17 @@
     "SEQUENCE": "350",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Brown",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773027964387.jpg",
+    "photo1TakenAt": "2026-03-09T03:35:42.703Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_38%2Fphoto_1_1773027964387.jpg?alt=media&token=501652de-3840-43ca-be8e-469a18c21b1f",
     "rowIndex": 39,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:46:05.942Z"
   },
   "TASK_1772931969080_39": {
     "ACCOUNTNUMBER": "11175872",
@@ -29129,10 +29332,17 @@
     "SEQUENCE": "360",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Silver",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773027966788.jpg",
+    "photo1TakenAt": "2026-03-09T03:36:14.121Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_39%2Fphoto_1_1773027966788.jpg?alt=media&token=88ed7286-98b6-4788-99ad-c9e2a13f9bb6",
     "rowIndex": 40,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:46:08.293Z"
   },
   "TASK_1772931969080_4": {
     "ACCOUNTNUMBER": "11457737",
@@ -29171,10 +29381,17 @@
     "SEQUENCE": "370",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Brown",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773027969197.jpg",
+    "photo1TakenAt": "2026-03-09T03:36:37.860Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_40%2Fphoto_1_1773027969197.jpg?alt=media&token=e9e2e600-aeb9-4e09-8eff-ca5243224dbc",
     "rowIndex": 41,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:46:11.218Z"
   },
   "TASK_1772931969080_41": {
     "ACCOUNTNUMBER": "11176050",
@@ -29192,10 +29409,17 @@
     "SEQUENCE": "380",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Brown",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773027972103.jpg",
+    "photo1TakenAt": "2026-03-09T03:37:04.043Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_41%2Fphoto_1_1773027972103.jpg?alt=media&token=b88b6d96-ebda-4d01-8188-397182273e1f",
     "rowIndex": 42,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:46:14.762Z"
   },
   "TASK_1772931969080_42": {
     "ACCOUNTNUMBER": "11174301",
@@ -29213,10 +29437,17 @@
     "SEQUENCE": "390",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "White",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773027975984.jpg",
+    "photo1TakenAt": "2026-03-09T03:38:08.506Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_42%2Fphoto_1_1773027975984.jpg?alt=media&token=d3aa6189-9a34-4dca-8b0f-05b5dd4a3658",
     "rowIndex": 43,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:46:17.615Z"
   },
   "TASK_1772931969080_43": {
     "ACCOUNTNUMBER": "11174356",
@@ -29234,10 +29465,17 @@
     "SEQUENCE": "400",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Brown",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773027978563.jpg",
+    "photo1TakenAt": "2026-03-09T03:38:40.857Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_43%2Fphoto_1_1773027978563.jpg?alt=media&token=68a941ac-9e72-418d-a066-5815fe04f823",
     "rowIndex": 44,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:46:20.166Z"
   },
   "TASK_1772931969080_44": {
     "ACCOUNTNUMBER": "11174409",
@@ -29255,10 +29493,17 @@
     "SEQUENCE": "410",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Brown",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773027981101.jpg",
+    "photo1TakenAt": "2026-03-09T03:39:09.920Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_44%2Fphoto_1_1773027981101.jpg?alt=media&token=4c6f06be-2c9e-4d48-83ed-d0ed5e32ece0",
     "rowIndex": 45,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:46:22.734Z"
   },
   "TASK_1772931969080_45": {
     "ACCOUNTNUMBER": "11174454",
@@ -29276,10 +29521,17 @@
     "SEQUENCE": "420",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Black",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773027983587.jpg",
+    "photo1TakenAt": "2026-03-09T03:39:38.653Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_45%2Fphoto_1_1773027983587.jpg?alt=media&token=9997cadd-7b47-4c0e-899f-9e8661b95684",
     "rowIndex": 46,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:46:25.112Z"
   },
   "TASK_1772931969080_46": {
     "ACCOUNTNUMBER": "22563218",
@@ -29297,10 +29549,17 @@
     "SEQUENCE": "430",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Silver",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773027985971.jpg",
+    "photo1TakenAt": "2026-03-09T03:40:01.399Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_46%2Fphoto_1_1773027985971.jpg?alt=media&token=14f0c9cc-09a5-46d0-8735-3ab386a3d16b",
     "rowIndex": 47,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:46:28.368Z"
   },
   "TASK_1772931969080_47": {
     "ACCOUNTNUMBER": "11176256",
@@ -29318,10 +29577,17 @@
     "SEQUENCE": "440",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Brown",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773027989263.jpg",
+    "photo1TakenAt": "2026-03-09T03:40:25.155Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_47%2Fphoto_1_1773027989263.jpg?alt=media&token=545c6e69-74c9-471b-b5ce-542ce438e0b2",
     "rowIndex": 48,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:46:31.640Z"
   },
   "TASK_1772931969080_48": {
     "ACCOUNTNUMBER": "11176201",
@@ -29339,10 +29605,17 @@
     "SEQUENCE": "450",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "White",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773027992517.jpg",
+    "photo1TakenAt": "2026-03-09T03:40:51.951Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_48%2Fphoto_1_1773027992517.jpg?alt=media&token=db6818af-a5b2-4a13-9dba-750cf7822783",
     "rowIndex": 49,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:46:34.815Z"
   },
   "TASK_1772931969080_49": {
     "ACCOUNTNUMBER": "11176158",
@@ -29360,10 +29633,17 @@
     "SEQUENCE": "460",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "White",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773027995656.jpg",
+    "photo1TakenAt": "2026-03-09T03:41:19.154Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_49%2Fphoto_1_1773027995656.jpg?alt=media&token=b6526578-d1ca-41a4-8877-d4fdefe71e35",
     "rowIndex": 50,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:46:37.990Z"
   },
   "TASK_1772931969080_5": {
     "ACCOUNTNUMBER": "11174551",
@@ -29381,10 +29661,18 @@
     "SEQUENCE": "11",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D3-Inserted in Gate",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "gate_or_mailbox_color": "Brown",
+    "other_remarks": "",
+    "photo1Filename": "photo_1_1773025681980.jpg",
+    "photo1TakenAt": "2026-03-09T03:01:58.637Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_5%2Fphoto_1_1773025681980.jpg?alt=media&token=dc1afa3f-dffd-47eb-b6d2-6863ec22f7cd",
     "rowIndex": 6,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:08:03.391Z"
   },
   "TASK_1772931969080_50": {
     "ACCOUNTNUMBER": "11176354",
@@ -29402,10 +29690,17 @@
     "SEQUENCE": "470",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Silver",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773027998832.jpg",
+    "photo1TakenAt": "2026-03-09T03:41:48.636Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_50%2Fphoto_1_1773027998832.jpg?alt=media&token=3d43515e-a573-42ac-8011-0a4324ad6ca9",
     "rowIndex": 51,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:46:40.214Z"
   },
   "TASK_1772931969080_51": {
     "ACCOUNTNUMBER": "11176103",
@@ -29423,10 +29718,17 @@
     "SEQUENCE": "480",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Black",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773028001074.jpg",
+    "photo1TakenAt": "2026-03-09T03:42:13.787Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_51%2Fphoto_1_1773028001074.jpg?alt=media&token=d25ee7bb-a203-401e-858a-357dd1745a0d",
     "rowIndex": 52,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:46:42.497Z"
   },
   "TASK_1772931969080_52": {
     "ACCOUNTNUMBER": "11176005",
@@ -29444,10 +29746,17 @@
     "SEQUENCE": "490",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Brown",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773028003334.jpg",
+    "photo1TakenAt": "2026-03-09T03:42:42.842Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_52%2Fphoto_1_1773028003334.jpg?alt=media&token=5a94df4f-b92f-47ca-bae6-272aad381b01",
     "rowIndex": 53,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:46:44.803Z"
   },
   "TASK_1772931969080_53": {
     "ACCOUNTNUMBER": "11175925",
@@ -29465,10 +29774,17 @@
     "SEQUENCE": "500",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "White",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773028005640.jpg",
+    "photo1TakenAt": "2026-03-09T03:43:10.652Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_53%2Fphoto_1_1773028005640.jpg?alt=media&token=432fd9ef-376f-4f9b-afe1-e8b752d3cb79",
     "rowIndex": 54,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:46:47.483Z"
   },
   "TASK_1772931969080_54": {
     "ACCOUNTNUMBER": "22541304",
@@ -29486,10 +29802,17 @@
     "SEQUENCE": "510",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Silver",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773028008329.jpg",
+    "photo1TakenAt": "2026-03-09T03:43:42.053Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_54%2Fphoto_1_1773028008329.jpg?alt=media&token=c83a48da-61f3-4adb-baa5-e1edfab95015",
     "rowIndex": 55,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:46:49.736Z"
   },
   "TASK_1772931969080_55": {
     "ACCOUNTNUMBER": "11175710",
@@ -29507,10 +29830,17 @@
     "SEQUENCE": "520",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "White",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773028010565.jpg",
+    "photo1TakenAt": "2026-03-09T03:44:09.270Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_55%2Fphoto_1_1773028010565.jpg?alt=media&token=f3b35c0f-4d3e-4491-88d1-80100c1fa937",
     "rowIndex": 56,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:46:51.948Z"
   },
   "TASK_1772931969080_56": {
     "ACCOUNTNUMBER": "11176309",
@@ -29528,10 +29858,19 @@
     "SEQUENCE": "530",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D1-Received",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "other_remarks": "",
+    "photo1Filename": "photo_1_1773028012803.jpg",
+    "photo1TakenAt": "2026-03-09T03:45:19.844Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_56%2Fphoto_1_1773028012803.jpg?alt=media&token=3e4538b8-ccef-4ab8-9acf-61b0cce46053",
+    "received_by": "Candido santos",
+    "relationship_to_owner": "Head guard",
     "rowIndex": 57,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:46:55.049Z"
   },
   "TASK_1772931969080_57": {
     "ACCOUNTNUMBER": "10720197",
@@ -29633,10 +29972,17 @@
     "SEQUENCE": "20",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Brown",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773025684211.jpg",
+    "photo1TakenAt": "2026-03-09T03:02:28.867Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_6%2Fphoto_1_1773025684211.jpg?alt=media&token=6e2dd137-190d-4611-a9a3-3f2c17ae1773",
     "rowIndex": 7,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:08:05.664Z"
   },
   "TASK_1772931969080_60": {
     "ACCOUNTNUMBER": "13166539",
@@ -29761,10 +30107,18 @@
     "SEQUENCE": "30",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D2-Put in Mailbox",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "gate_or_mailbox_color": "Brown",
+    "other_remarks": "",
+    "photo1Filename": "photo_1_1773025686463.jpg",
+    "photo1TakenAt": "2026-03-09T03:03:06.806Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_7%2Fphoto_1_1773025686463.jpg?alt=media&token=3c3ab136-f9bb-4e3d-86c1-4d6398b7ca16",
     "rowIndex": 8,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:08:07.988Z"
   },
   "TASK_1772931969080_8": {
     "ACCOUNTNUMBER": "11174720",
@@ -29782,10 +30136,17 @@
     "SEQUENCE": "40",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Silver",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773025688788.jpg",
+    "photo1TakenAt": "2026-03-09T03:03:32.479Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_8%2Fphoto_1_1773025688788.jpg?alt=media&token=4c6338d7-6b2b-44e6-ac17-993a4eccc278",
     "rowIndex": 9,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:08:11.196Z"
   },
   "TASK_1772931969080_9": {
     "ACCOUNTNUMBER": "11174766",
@@ -29803,10 +30164,17 @@
     "SEQUENCE": "50",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T09:06:09",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Brown",
     "driverId": "MMS-BILL38",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773025691979.jpg",
+    "photo1TakenAt": "2026-03-09T03:04:03.145Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772931969080_9%2Fphoto_1_1773025691979.jpg?alt=media&token=597ac3a5-8a42-40bd-bf3c-c70a769a9391",
     "rowIndex": 10,
-    "status": "PENDING",
-    "uploadBatch": 1772931969080
+    "status": "COMPLETED",
+    "uploadBatch": 1772931969080,
+    "uploadedAt": "2026-03-09T03:08:13.356Z"
   },
   "TASK_1772934613205_0": {
     "ACCOUNTNUMBER": "15040448",
