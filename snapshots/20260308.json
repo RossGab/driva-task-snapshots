@@ -2901,10 +2901,18 @@
     "SEQUENCE": "840",
     "ZIPCODE": "",
     "createdAt": "2026-03-08T08:39:57",
+    "deliveryType": "N2-Inserted in Gate Mailbox",
     "driverId": "QC1",
+    "forceReopen": false,
+    "gate_or_mailbox_color": "black",
+    "other_remarks": "",
+    "photo1Filename": "photo_1_1773137988607.jpg",
+    "photo1TakenAt": "2026-03-10T09:34:21.385Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1772930397862_200%2Fphoto_1_1773137988607.jpg?alt=media&token=2a094e8c-a5a6-4cf9-8740-62f65c1ce983",
     "rowIndex": 201,
-    "status": "PENDING",
-    "uploadBatch": 1772930397862
+    "status": "COMPLETED",
+    "uploadBatch": 1772930397862,
+    "uploadedAt": "2026-03-10T10:19:51.832Z"
   },
   "TASK_1772930397862_201": {
     "ACCOUNTNUMBER": "11578394",
