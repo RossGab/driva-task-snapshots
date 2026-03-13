@@ -389,11 +389,18 @@
     "MRU": "144",
     "SEQUENCE": "1313",
     "ZIPCODE": "",
+    "amount_paid": "000",
     "createdAt": "2026-03-12T07:38:41",
+    "deliveryType": "N4-Refused to receive due to payment",
     "driverId": "QC5",
+    "forceReopen": false,
+    "photo1Filename": "photo_1_1773360743923.jpg",
+    "photo1TakenAt": "2026-03-12T13:15:15.764Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1773272321410_11%2Fphoto_1_1773360743923.jpg?alt=media&token=ffdb0f29-81ac-4715-8e8f-10138930bfdf",
     "rowIndex": 12,
-    "status": "PENDING",
-    "uploadBatch": 1773272321410
+    "status": "COMPLETED",
+    "uploadBatch": 1773272321410,
+    "uploadedAt": "2026-03-13T00:12:26.862Z"
   },
   "TASK_1773272321410_110": {
     "ACCOUNTNUMBER": "19528423",
