@@ -56527,10 +56527,17 @@
     "SEQUENCE": "1060",
     "ZIPCODE": "",
     "createdAt": "2026-03-13T08:06:46",
+    "deliveryType": "N7-Demolished",
     "driverId": "QC8",
+    "forceReopen": false,
+    "other_remarks": "",
+    "photo1Filename": "photo_1_1773443939733.jpg",
+    "photo1TakenAt": "2026-03-13T23:18:51.148Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1773360406796_274%2Fphoto_1_1773443939733.jpg?alt=media&token=cb6fec83-bff5-45b5-a808-bac5c3e89abf",
     "rowIndex": 275,
-    "status": "PENDING",
-    "uploadBatch": 1773360406796
+    "status": "COMPLETED",
+    "uploadBatch": 1773360406796,
+    "uploadedAt": "2026-03-13T23:19:02.960Z"
   },
   "TASK_1773360406796_275": {
     "ACCOUNTNUMBER": "10163459",
