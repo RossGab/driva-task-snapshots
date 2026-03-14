@@ -61394,10 +61394,17 @@
     "SEQUENCE": "6",
     "ZIPCODE": "",
     "createdAt": "2026-03-13T08:06:46",
+    "deliveryType": "N3-RPO",
     "driverId": "QC5",
+    "forceReopen": false,
+    "other_remarks": "",
+    "photo1Filename": "photo_1_1773490088904.jpg",
+    "photo1TakenAt": "2026-03-14T11:19:44.479Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1773360406796_35%2Fphoto_1_1773490088904.jpg?alt=media&token=80b264cd-e846-44bb-bc89-07abaf2166a8",
     "rowIndex": 36,
-    "status": "PENDING",
-    "uploadBatch": 1773360406796
+    "status": "COMPLETED",
+    "uploadBatch": 1773360406796,
+    "uploadedAt": "2026-03-14T12:08:12.892Z"
   },
   "TASK_1773360406796_350": {
     "ACCOUNTNUMBER": "24180681",
