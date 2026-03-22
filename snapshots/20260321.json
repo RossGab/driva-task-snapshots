@@ -247469,10 +247469,19 @@
     "SEQUENCE": "71",
     "ZIPCODE": "",
     "createdAt": "2026-03-21T15:09:03",
+    "deliveryType": "D1-Received",
     "driverId": "MMS-BILL43",
+    "forceReopen": false,
+    "other_remarks": "",
+    "photo1Filename": "photo_1_1774157263686.jpg",
+    "photo1TakenAt": "2026-03-22T02:42:01.434Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1774076943132_63%2Fphoto_1_1774157263686.jpg?alt=media&token=1dc5330d-cba0-4c4e-bfa1-a16e34970344",
+    "received_by": "Villamor",
+    "relationship_to_owner": "Owner",
     "rowIndex": 64,
-    "status": "PENDING",
-    "uploadBatch": 1774076943132
+    "status": "COMPLETED",
+    "uploadBatch": 1774076943132,
+    "uploadedAt": "2026-03-22T05:27:46.635Z"
   },
   "TASK_1774076943132_64": {
     "ACCOUNTNUMBER": "15446304",
