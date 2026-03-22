@@ -91989,10 +91989,18 @@
     "SEQUENCE": "134",
     "ZIPCODE": "",
     "createdAt": "2026-03-11T09:51:22",
+    "deliveryType": "D2-Put in Mailbox",
     "driverId": "MMS-BILL48",
+    "forceReopen": false,
+    "gate_or_mailbox_color": "Loi",
+    "other_remarks": "",
+    "photo1Filename": "photo_1_1773755763871.jpg",
+    "photo1TakenAt": "2026-03-13T08:01:43.599Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1773193882153_1685%2Fphoto_1_1773755763871.jpg?alt=media&token=f7f8bede-b3c7-4581-bcd4-cea53926b7fe",
     "rowIndex": 1686,
-    "status": "PENDING",
-    "uploadBatch": 1773193882153
+    "status": "COMPLETED",
+    "uploadBatch": 1773193882153,
+    "uploadedAt": "2026-03-17T13:56:05.244Z"
   },
   "TASK_1773193882153_1686": {
     "ACCOUNTNUMBER": "12063580",
