@@ -216520,10 +216520,18 @@
     "SEQUENCE": "1710",
     "ZIPCODE": "",
     "createdAt": "2026-03-21T10:48:09",
+    "deliveryType": "D3-Inserted in Gate",
     "driverId": "PAS-BILL10",
+    "forceReopen": false,
+    "gate_or_mailbox_color": "Red",
+    "other_remarks": "",
+    "photo1Filename": "photo_1_1774453642271.jpg",
+    "photo1TakenAt": "2026-03-25T15:39:27.323Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1774061289701_218%2Fphoto_1_1774453642271.jpg?alt=media&token=71582c69-e4d7-45c3-9f4f-0b4ce56b53bc",
     "rowIndex": 219,
-    "status": "PENDING",
-    "uploadBatch": 1774061289701
+    "status": "COMPLETED",
+    "uploadBatch": 1774061289701,
+    "uploadedAt": "2026-03-25T15:47:24.347Z"
   },
   "TASK_1774061289701_219": {
     "ACCOUNTNUMBER": "17068441",
@@ -216604,10 +216612,19 @@
     "SEQUENCE": "1730",
     "ZIPCODE": "",
     "createdAt": "2026-03-21T10:48:09",
+    "deliveryType": "D1-Received",
     "driverId": "PAS-BILL10",
+    "forceReopen": false,
+    "other_remarks": "",
+    "photo1Filename": "photo_1_1774453645225.jpg",
+    "photo1TakenAt": "2026-03-25T15:38:48.810Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1774061289701_221%2Fphoto_1_1774453645225.jpg?alt=media&token=474b91e6-4834-4b11-8d7a-45cd41596d89",
+    "received_by": "Adoration olido",
+    "relationship_to_owner": "Owner",
     "rowIndex": 222,
-    "status": "PENDING",
-    "uploadBatch": 1774061289701
+    "status": "COMPLETED",
+    "uploadBatch": 1774061289701,
+    "uploadedAt": "2026-03-25T15:47:27.434Z"
   },
   "TASK_1774061289701_222": {
     "ACCOUNTNUMBER": "17068405",
@@ -256506,10 +256523,17 @@
     "SEQUENCE": "170",
     "ZIPCODE": "",
     "createdAt": "2026-03-21T15:09:03",
+    "deliveryType": "D3-Inserted in Gate",
     "driverId": "MMS-BILL43",
+    "gate_or_mailbox_color": "Gray",
+    "other_remarks": "",
+    "photo1Filename": "photo_1_1774442043906.jpg",
+    "photo1TakenAt": "2026-03-22T12:02:58.247Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1774076943132_97%2Fphoto_1_1774442043906.jpg?alt=media&token=ed1800cd-e934-4392-ab30-5fa556c3ea22",
     "rowIndex": 98,
     "status": "PENDING",
-    "uploadBatch": 1774076943132
+    "uploadBatch": 1774076943132,
+    "uploadedAt": "2026-03-25T12:34:06.742Z"
   },
   "TASK_1774076943132_98": {
     "ACCOUNTNUMBER": "14074903",
