@@ -6651,10 +6651,21 @@
     "SEQUENCE": "10",
     "ZIPCODE": "",
     "createdAt": "2026-03-29T07:14:46",
+    "deliveryType": "D3-Inserted in Gate",
     "driverId": "MMS-BILL43",
+    "forceReopen": false,
+    "gate_or_mailbox_color": "Gray",
+    "other_remarks": "",
+    "photo1Filename": "photo_1_1774743226781.jpg",
+    "photo1TakenAt": "2026-03-29T00:13:33.010Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1774739686751_0%2Fphoto_1_1774743226781.jpg?alt=media&token=816999a4-09a2-4d5d-a6ac-66677d13d5d3",
+    "photo2Filename": "photo_2_1774743232502.jpg",
+    "photo2TakenAt": "2026-03-29T00:13:41.961Z",
+    "photo2Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1774739686751_0%2Fphoto_2_1774743232502.jpg?alt=media&token=b0d7e653-dcd9-40c7-befc-96609c230f04",
     "rowIndex": 1,
-    "status": "PENDING",
-    "uploadBatch": 1774739686751
+    "status": "COMPLETED",
+    "uploadBatch": 1774739686751,
+    "uploadedAt": "2026-03-29T00:13:55.857Z"
   },
   "TASK_1774739686751_1": {
     "ACCOUNTNUMBER": "11918099",
