@@ -75,15 +75,6 @@ function phHour() {
   );
 }
 
-function writeRunningMeta() {
-  const meta = {
-    status: "running",
-    updatedAt: new Date().toISOString(),
-  };
-
-  fs.writeFileSync(LATEST_META_PATH, JSON.stringify(meta, null, 2));
-  console.log("⏳ Snapshot marked as RUNNING");
-}
 
 /* =========================
    SNAPSHOT ONE DATE
@@ -136,8 +127,6 @@ function writeLatestMeta(latestDate) {
 (async () => {
   console.log("📸 Snapshot TODAY job started");
 
-  writeRunningMeta();
-
   const hourPH = phHour();
 
   if (!FORCE_RUN && (hourPH < 6 || hourPH > 21)) {
@@ -161,16 +150,29 @@ function writeLatestMeta(latestDate) {
     }
 
     if (latestWritten) {
-      writeLatestMeta(latestWritten);
-    } else {
-      console.log("⚠️ No snapshots written, latest.json not updated");
-    }
+        writeLatestMeta(latestWritten);
+      } else {
+        console.log("⚠️ No snapshots written");
+      
+        // 🔥 mark as error instead of leaving "running"
+        fs.writeFileSync(LATEST_META_PATH, JSON.stringify({
+          status: "error",
+          updatedAt: new Date().toISOString()
+        }, null, 2));
+      }
 
     console.log("✅ Snapshot TODAY completed");
   } catch (err) {
-    console.error("❌ Snapshot failed:", err);
-    process.exitCode = 1;
-  } finally {
+  console.error("❌ Snapshot failed:", err);
+
+  // 🔥 WRITE ERROR STATE
+  fs.writeFileSync(LATEST_META_PATH, JSON.stringify({
+    status: "error",
+    updatedAt: new Date().toISOString()
+  }, null, 2));
+
+  process.exitCode = 1;
+} finally {
     try {
       await admin.app().delete();
     } catch {}
