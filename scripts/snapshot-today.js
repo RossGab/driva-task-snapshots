@@ -75,6 +75,16 @@ function phHour() {
   );
 }
 
+function writeRunningMeta() {
+  const meta = {
+    status: "running",
+    updatedAt: new Date().toISOString(),
+  };
+
+  fs.writeFileSync(LATEST_META_PATH, JSON.stringify(meta, null, 2));
+  console.log("⏳ Snapshot marked as RUNNING");
+}
+
 /* =========================
    SNAPSHOT ONE DATE
 ========================= */
@@ -111,8 +121,9 @@ async function snapshotDate(dateKey) {
 ========================= */
 function writeLatestMeta(latestDate) {
   const meta = {
+    status: "done", // 🔥 ADD THIS
     latestDate,
-    updatedAt: new Date().toISOString(), // ✅ canonical UTC
+    updatedAt: new Date().toISOString(),
   };
 
   fs.writeFileSync(LATEST_META_PATH, JSON.stringify(meta, null, 2));
@@ -124,6 +135,8 @@ function writeLatestMeta(latestDate) {
 ========================= */
 (async () => {
   console.log("📸 Snapshot TODAY job started");
+
+  writeRunningMeta();
 
   const hourPH = phHour();
 
