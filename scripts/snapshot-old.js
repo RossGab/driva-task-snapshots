@@ -153,7 +153,7 @@ async function snapshotDate(dateKey) {
     for (const dateKey of dateKeys) {
       const daysAgo = daysAgoFromKey(dateKey);
 
-      if (daysAgo < 8 || daysAgo > 14) continue;
+      if (daysAgo < 8 || daysAgo > 10) continue;
 
       if (await snapshotDate(dateKey)) {
         processed++;
