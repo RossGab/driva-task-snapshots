@@ -37006,10 +37006,19 @@
     "SEQUENCE": "2380",
     "ZIPCODE": "",
     "createdAt": "2026-04-02T10:22:33",
+    "deliveryType": "D1-Received",
     "driverId": "PAS-BILL2",
+    "forceReopen": false,
+    "other_remarks": "",
+    "photo1Filename": "photo_1_1775182903622.jpg",
+    "photo1TakenAt": "2026-04-02T07:04:23.666Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1775096553868_280%2Fphoto_1_1775182903622.jpg?alt=media&token=9280a879-45ee-4299-a122-92bc3bf918b1",
+    "received_by": "DELA CRUZ",
+    "relationship_to_owner": "Owner",
     "rowIndex": 281,
-    "status": "PENDING",
-    "uploadBatch": 1775096553868
+    "status": "COMPLETED",
+    "uploadBatch": 1775096553868,
+    "uploadedAt": "2026-04-03T02:34:56.780Z"
   },
   "TASK_1775096553868_281": {
     "ACCOUNTNUMBER": "20948245",
