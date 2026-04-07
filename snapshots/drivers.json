@@ -149,6 +149,16 @@
     "updatedAt": "2026-02-02T23:56:46.833Z",
     "vehicle": ""
   },
+  "EWAC_1": {
+    "address": "",
+    "contact": "",
+    "createdAt": "2026-04-07T06:00:45.168Z",
+    "driverCode": "EWAC_1",
+    "name": "REYNOLL",
+    "team": "",
+    "updatedAt": "2026-04-07T06:00:45.168Z",
+    "vehicle": ""
+  },
   "JENIFER JUGNO": {
     "address": "",
     "contact": "",
@@ -1357,6 +1367,16 @@
     "name": "Maximo Guevarra Jr",
     "team": "",
     "updatedAt": "2026-03-09T06:56:04.939Z",
+    "vehicle": ""
+  },
+  "SLWC_1": {
+    "address": "",
+    "contact": "",
+    "createdAt": "2026-04-07T05:59:33.245Z",
+    "driverCode": "SLWC_1",
+    "name": "REYNOLL",
+    "team": "",
+    "updatedAt": "2026-04-07T05:59:33.245Z",
     "vehicle": ""
   },
   "TEST 1": {
