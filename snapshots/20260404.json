@@ -323234,10 +323234,17 @@
     "SEQUENCE": "2220",
     "ZIPCODE": "",
     "createdAt": "2026-04-04T09:25:49",
+    "deliveryType": "D5-Delivered to SA",
     "driverId": "PAS-BILL25",
+    "forceReopen": false,
+    "other_remarks": "Kams",
+    "photo1Filename": "photo_1_1775529611939.jpg",
+    "photo1TakenAt": "2026-04-07T02:39:16.805Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1775265949116_3659%2Fphoto_1_1775529611939.jpg?alt=media&token=b0ed0de1-3ed1-463b-bf41-070f985db746",
     "rowIndex": 3660,
-    "status": "PENDING",
-    "uploadBatch": 1775265949116
+    "status": "COMPLETED",
+    "uploadBatch": 1775265949116,
+    "uploadedAt": "2026-04-07T02:40:14.100Z"
   },
   "TASK_1775265949116_366": {
     "ACCOUNTNUMBER": "24444415",
@@ -323284,10 +323291,17 @@
     "SEQUENCE": "2230",
     "ZIPCODE": "",
     "createdAt": "2026-04-04T09:25:49",
+    "deliveryType": "D5-Delivered to SA",
     "driverId": "PAS-BILL25",
+    "forceReopen": false,
+    "other_remarks": "Kams",
+    "photo1Filename": "photo_1_1775529615329.jpg",
+    "photo1TakenAt": "2026-04-07T02:39:26.377Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1775265949116_3660%2Fphoto_1_1775529615329.jpg?alt=media&token=09369b8f-6482-45d4-93e6-c54e6214b32e",
     "rowIndex": 3661,
-    "status": "PENDING",
-    "uploadBatch": 1775265949116
+    "status": "COMPLETED",
+    "uploadBatch": 1775265949116,
+    "uploadedAt": "2026-04-07T02:40:17.055Z"
   },
   "TASK_1775265949116_3661": {
     "ACCOUNTNUMBER": "22250591",
@@ -323305,10 +323319,17 @@
     "SEQUENCE": "2235",
     "ZIPCODE": "",
     "createdAt": "2026-04-04T09:25:49",
+    "deliveryType": "D5-Delivered to SA",
     "driverId": "PAS-BILL25",
+    "forceReopen": false,
+    "other_remarks": "Kams",
+    "photo1Filename": "photo_1_1775529618085.jpg",
+    "photo1TakenAt": "2026-04-07T02:39:41.723Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1775265949116_3661%2Fphoto_1_1775529618085.jpg?alt=media&token=e0a735cd-3c64-49da-a31e-bf232efc95ae",
     "rowIndex": 3662,
-    "status": "PENDING",
-    "uploadBatch": 1775265949116
+    "status": "COMPLETED",
+    "uploadBatch": 1775265949116,
+    "uploadedAt": "2026-04-07T02:40:19.900Z"
   },
   "TASK_1775265949116_3662": {
     "ACCOUNTNUMBER": "10705891",
