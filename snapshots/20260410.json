@@ -268,10 +268,18 @@
     "MRU": "546",
     "SEQUENCE": "1640",
     "ZIPCODE": "",
+    "_key": "TASK_1775756365704_9",
     "createdAt": "2026-04-10T01:39:25",
+    "dateKey": "20260410",
+    "deliveryType": "N5-VACANT",
     "driverId": "driver_001",
+    "other_remarks": "Complete 1",
+    "photo1TakenAt": "2026-04-09T19:00:04.382Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1775756365704_9%2Fphoto_1_1775761590544.jpg?alt=media&token=191c8681-f88b-445a-ab9c-1a18f71b1f5c",
+    "photo2TakenAt": "2026-04-09T19:00:10.321Z",
+    "photo2Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1775756365704_9%2Fphoto_2_1775761594644.jpg?alt=media&token=faf25b13-9a21-454a-b5a2-cff2362a7336",
     "rowIndex": 10,
-    "status": "PENDING",
+    "status": "COMPLETED",
     "uploadBatch": 1775756365704
   }
 }
