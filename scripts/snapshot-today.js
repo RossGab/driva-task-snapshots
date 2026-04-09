@@ -129,7 +129,7 @@ function writeLatestMeta(latestDate) {
 
   const hourPH = phHour();
 
-  if (!FORCE_RUN && (hourPH < 6 || hourPH > 21)) {
+  if (!FORCE_RUN && (hourPH < 6 || hourPH > 23)) {
     console.log("⏭️ Skipped (outside 6AM–9PM PH)");
     await admin.app().delete();
     process.exit(0);
@@ -137,7 +137,7 @@ function writeLatestMeta(latestDate) {
 
   try {
     const todayKey = phDateKey(0);
-    const yesterdayKey = phDateKey(1);
+    // const yesterdayKey = phDateKey(1);
 
     let latestWritten = null;
 
@@ -145,9 +145,9 @@ function writeLatestMeta(latestDate) {
       latestWritten = todayKey;
     }
 
-    if (await snapshotDate(yesterdayKey) && !latestWritten) {
-      latestWritten = yesterdayKey;
-    }
+    // if (await snapshotDate(yesterdayKey) && !latestWritten) {
+    //   latestWritten = yesterdayKey;
+    // }
 
     if (latestWritten) {
         writeLatestMeta(latestWritten);
