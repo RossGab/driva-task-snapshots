@@ -1,0 +1,92 @@
+name: Snapshot Manual
+
+on:
+  workflow_dispatch:
+    inputs:
+      force_run:
+        description: "Force run outside hours (1 = yes)"
+        required: false
+        default: "1"
+      snapshot_date:
+        description: "Manual date (YYYYMMDD)"
+        required: false
+        default: ""
+
+concurrency:
+  group: snapshot-main
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Abort if another snapshot is running or queued
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          RUNNING=$(gh run list \
+            --workflow snapshot-manual.yml \
+            --status in_progress,queued \
+            --limit 5 \
+            --json databaseId \
+            | jq length)
+
+          if [ "$RUNNING" -gt 1 ]; then
+            echo "Another snapshot is already running or queued. Exiting."
+            exit 0
+          fi
+
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - run: npm install firebase-admin
+
+      # ✅ STEP 1 — Mark RUNNING ONLY
+      - name: Mark snapshot running
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: node scripts/mark-running.js
+
+      # ✅ STEP 2 — Commit RUNNING immediately
+      - name: Commit RUNNING status
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add snapshots/latest.json
+
+          git commit -m "⏳ snapshot running" || echo "No changes"
+
+          git pull --rebase origin main
+          git push
+
+      # ✅ STEP 3 — Run actual snapshot
+      - name: Run snapshot
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          FORCE_RUN: ${{ github.event.inputs.force_run }}
+          SNAPSHOT_DATE: ${{ github.event.inputs.snapshot_date }}
+        run: node scripts/snapshot-today.js
+
+      # ✅ STEP 4 — Commit final result
+      - name: Commit snapshots
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add snapshots
+
+          if git diff --cached --quiet; then
+            echo "No snapshot changes"
+            exit 0
+          fi
+
+          git commit -m "📦 snapshot complete"
+
+          git pull --rebase origin main
+          git push
