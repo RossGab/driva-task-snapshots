@@ -71,7 +71,7 @@ jobs:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           FORCE_RUN: ${{ github.event.inputs.force_run }}
           SNAPSHOT_DATE: ${{ github.event.inputs.snapshot_date }}
-        run: node scripts/snapshot-today.js
+        run: node scripts/snapshotselected.js
 
       # ✅ STEP 4 — Commit final result
       - name: Commit snapshots
