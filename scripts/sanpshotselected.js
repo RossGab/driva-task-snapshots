@@ -18,7 +18,7 @@ const path = require("path");
    FLAGS
 ========================= */
 const FORCE_RUN = process.env.FORCE_RUN === "1";
-const SNAPSHOT_DATE = process.env.SNAPSHOT_DATE || null; // 🔥 ADDED
+const SNAPSHOT_DATE = process.env.SNAPSHOT_DATE; // 🔥 FIXED (no fallback here)
 
 /* =========================
    FIREBASE INIT
@@ -46,8 +46,6 @@ const LATEST_META_PATH = path.join(SNAPSHOT_DIR, "latest.json");
 
 /**
  * Returns YYYYMMDD based on PH date
- * No Date parsing from strings
- * No ISO math on fake dates
  */
 function phDateKey(daysAgo = 0) {
   const base = new Date();
@@ -127,6 +125,9 @@ function writeLatestMeta(latestDate) {
 (async () => {
   console.log("📸 Snapshot TODAY job started");
 
+  // 🔥 DEBUG (you can remove later)
+  console.log("ENV SNAPSHOT_DATE RAW:", process.env.SNAPSHOT_DATE);
+
   const hourPH = phHour();
 
   if (!FORCE_RUN && (hourPH < 6 || hourPH > 23)) {
@@ -136,11 +137,12 @@ function writeLatestMeta(latestDate) {
   }
 
   try {
-    // 🔥 ONLY CHANGE: allow manual override
+    // 🔥 FIXED: strict check (handles "", spaces, undefined)
     let targetDate;
-    if (SNAPSHOT_DATE) {
-      console.log(`🧪 Using manual date: ${SNAPSHOT_DATE}`);
-      targetDate = SNAPSHOT_DATE;
+    if (SNAPSHOT_DATE && SNAPSHOT_DATE.trim() !== "") {
+      const cleanDate = SNAPSHOT_DATE.trim();
+      console.log(`🧪 Using manual date: ${cleanDate}`);
+      targetDate = cleanDate;
     } else {
       targetDate = phDateKey(0);
     }
