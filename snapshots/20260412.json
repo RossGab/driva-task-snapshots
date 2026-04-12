@@ -128,11 +128,19 @@
     "MRU": "677",
     "SEQUENCE": "1780",
     "ZIPCODE": "",
+    "_key": "TASK_1775934973262_4",
     "createdAt": "2026-04-12T03:16:13",
+    "dateKey": "20260412",
+    "deliveryType": "N1-Received",
     "driverId": "driver_001",
+    "exported": true,
+    "photo1Filename": "photo_1_1776020458507.jpg",
+    "photo1TakenAt": "2026-04-12T18:49:43.956Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1775934973262_4%2Fphoto_1_1776020458507.jpg?alt=media&token=bdaf1a41-4deb-440b-862c-046440461062",
     "rowIndex": 5,
-    "status": "PENDING",
-    "uploadBatch": 1775934973262
+    "status": "COMPLETED",
+    "uploadBatch": 1775934973262,
+    "uploadedAt": "2026-04-12T19:01:01.686Z"
   },
   "TASK_1775934973262_5": {
     "ACCOUNTNUMBER": "11212",
