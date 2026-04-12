@@ -137,7 +137,7 @@ function writeLatestMeta(latestDate) {
 
   try {
     const todayKey = phDateKey(0);
-    // const yesterdayKey = phDateKey(1);
+    const yesterdayKey = phDateKey(1);
 
     let latestWritten = null;
 
@@ -145,9 +145,9 @@ function writeLatestMeta(latestDate) {
       latestWritten = todayKey;
     }
 
-    // if (await snapshotDate(yesterdayKey) && !latestWritten) {
-    //   latestWritten = yesterdayKey;
-    // }
+    if (await snapshotDate(yesterdayKey) && !latestWritten) {
+       latestWritten = yesterdayKey;
+     }
 
     if (latestWritten) {
         writeLatestMeta(latestWritten);
