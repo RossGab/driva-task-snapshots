@@ -467494,15 +467494,15 @@
     "driverId": "TPT-BILL2",
     "forceReopen": false,
     "other_remarks": "",
-    "photo1Filename": "photo_1_1777361633492.jpg",
+    "photo1Filename": "photo_1_1777367887277.jpg",
     "photo1TakenAt": "2026-04-28T03:14:57.882Z",
-    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1777265108706_99%2Fphoto_1_1777361633492.jpg?alt=media&token=d21b277b-77b4-4c00-bdf8-0019a040f2e7",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1777265108706_99%2Fphoto_1_1777367887277.jpg?alt=media&token=11e339af-1a93-45b5-83b9-c90f8984d086",
     "received_by": "Alex",
     "relationship_to_owner": "Staff",
     "rowIndex": 100,
     "status": "COMPLETED",
     "uploadBatch": 1777265108706,
-    "uploadedAt": "2026-04-28T07:33:54.872Z"
+    "uploadedAt": "2026-04-28T09:18:10.848Z"
   },
   "TASK_1777276731899_0": {
     "ACCOUNTNUMBER": "10857272",
