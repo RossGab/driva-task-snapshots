@@ -1,0 +1,23 @@
+{
+  "TASK_1777679995414_0": {
+    "ACCOUNTNUMBER": "23069180",
+    "ADDRESS": "1972 SITIO ALON-ALON PALANGOY BINANGONAN",
+    "AGENTID": "AUDIT21",
+    "AGENTNAME": "MARK ANTHONY",
+    "BA": "AUDIT",
+    "CUSTOMERNAME": "AILEEN CASTANAS",
+    "DMZ": "PAS28",
+    "JOBTYPE": "NSCA AUDIT TEAM",
+    "LATITUDE": "14.510872",
+    "LONGITUDE": "121.187522",
+    "METERNUMBER": "1513438119",
+    "MRU": "9008",
+    "SEQUENCE": "270",
+    "ZIPCODE": "",
+    "createdAt": "2026-05-02T07:59:55",
+    "driverId": "AUDIT21",
+    "rowIndex": 1,
+    "status": "PENDING",
+    "uploadBatch": 1777679995414
+  }
+}
