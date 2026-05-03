@@ -184684,10 +184684,19 @@
     "SEQUENCE": "1330",
     "ZIPCODE": "",
     "createdAt": "2026-05-02T09:10:52",
+    "deliveryType": "N1-Received",
     "driverId": "TPT-BILL19",
+    "forceReopen": false,
+    "other_remarks": "",
+    "photo1Filename": "photo_1_1777784500117.jpg",
+    "photo1TakenAt": "2026-05-03T04:05:28.906Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1777684252518_569%2Fphoto_1_1777784500117.jpg?alt=media&token=a3630a60-5015-44d3-a746-c10766fadc0a",
+    "received_by": "Box",
+    "relationship_to_owner": "Gray",
     "rowIndex": 570,
-    "status": "PENDING",
-    "uploadBatch": 1777684252518
+    "status": "COMPLETED",
+    "uploadBatch": 1777684252518,
+    "uploadedAt": "2026-05-03T05:01:44.489Z"
   },
   "TASK_1777684252518_57": {
     "ACCOUNTNUMBER": "23261578",
