@@ -204899,10 +204899,17 @@
     "SEQUENCE": "171",
     "ZIPCODE": "",
     "createdAt": "2026-05-02T09:21:28",
+    "deliveryType": "N2-Inserted in Gate Mailbox",
     "driverId": "TPT-BILL21",
+    "gate_or_mailbox_color": "blue",
+    "other_remarks": "",
+    "photo1Filename": "photo_1_1777816392168.jpg",
+    "photo1TakenAt": "2026-05-02T03:24:49.796Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1777684888228_18%2Fphoto_1_1777816392168.jpg?alt=media&token=31455691-5158-4dce-80f1-abad1e037ebc",
     "rowIndex": 19,
     "status": "PENDING",
-    "uploadBatch": 1777684888228
+    "uploadBatch": 1777684888228,
+    "uploadedAt": "2026-05-03T13:53:16.430Z"
   },
   "TASK_1777684888228_180": {
     "ACCOUNTNUMBER": "12721067",
