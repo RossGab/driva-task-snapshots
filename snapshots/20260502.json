@@ -244269,19 +244269,15 @@
     "SEQUENCE": "0781",
     "ZIPCODE": "",
     "createdAt": "2026-05-02T13:57:33",
-    "deliveryType": "D6-Bagsakan",
     "driverId": "PAS-BILL2",
-    "forceReopen": false,
-    "other_remarks": "",
+    "finalized": false,
+    "forceReopen": true,
     "photo1Filename": "photo_1_1777797392029.jpg",
     "photo1TakenAt": "2026-05-03T01:26:45.125Z",
     "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1777701453018_76%2Fphoto_1_1777797392029.jpg?alt=media&token=aa92888c-b60c-479c-ab5a-b4f906337a9a",
-    "received_by": "PANGILINAN",
-    "relationship_to_owner": "Owner",
+    "reopenedAt": "2026-05-03T10:30:00.090Z",
     "rowIndex": 77,
-    "status": "COMPLETED",
-    "uploadBatch": 1777701453018,
-    "uploadedAt": "2026-05-03T08:36:33.699Z"
+    "status": "PENDING"
   },
   "TASK_1777701453018_77": {
     "ACCOUNTNUMBER": "16228583",
