@@ -209717,15 +209717,19 @@
     "createdAt": "2026-05-02T09:21:28",
     "deliveryType": "N2-Inserted in Gate Mailbox",
     "driverId": "TPT-BILL21",
+    "forceReopen": false,
     "gate_or_mailbox_color": "blue",
     "other_remarks": "",
-    "photo1Filename": "photo_1_1777816392168.jpg",
+    "photo1Filename": "photo_1_1778022429322.jpg",
     "photo1TakenAt": "2026-05-02T03:24:49.796Z",
-    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1777684888228_18%2Fphoto_1_1777816392168.jpg?alt=media&token=31455691-5158-4dce-80f1-abad1e037ebc",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1777684888228_18%2Fphoto_1_1778022429322.jpg?alt=media&token=75e1c3d8-d533-458d-aed4-b6f1258a96d6",
+    "photo2Filename": "photo_2_1778022432470.jpg",
+    "photo2TakenAt": "2026-05-02T03:24:54.584Z",
+    "photo2Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1777684888228_18%2Fphoto_2_1778022432470.jpg?alt=media&token=efdc31bf-0968-4163-81d4-da726710b481",
     "rowIndex": 19,
-    "status": "PENDING",
+    "status": "COMPLETED",
     "uploadBatch": 1777684888228,
-    "uploadedAt": "2026-05-03T13:53:16.430Z"
+    "uploadedAt": "2026-05-05T23:07:14.621Z"
   },
   "TASK_1777684888228_180": {
     "ACCOUNTNUMBER": "12721067",
