@@ -465041,10 +465041,18 @@
     "SEQUENCE": "1910",
     "ZIPCODE": "",
     "createdAt": "2026-05-10T11:43:36",
+    "deliveryType": "D2-Put in Mailbox",
     "driverId": "TPT-BILL11",
+    "forceReopen": false,
+    "gate_or_mailbox_color": "white",
+    "other_remarks": "",
+    "photo1Filename": "photo_1_1778471143546.jpg",
+    "photo1TakenAt": "2026-05-11T03:45:34.469Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1778384616424_741%2Fphoto_1_1778471143546.jpg?alt=media&token=c69f1aa2-4591-43e8-8eb9-25c4aa902f98",
     "rowIndex": 742,
-    "status": "PENDING",
-    "uploadBatch": 1778384616424
+    "status": "COMPLETED",
+    "uploadBatch": 1778384616424,
+    "uploadedAt": "2026-05-11T03:45:47.629Z"
   },
   "TASK_1778384616424_742": {
     "ACCOUNTNUMBER": "21616333",
