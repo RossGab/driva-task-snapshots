@@ -340136,9 +340136,17 @@
     "ZIPCODE": "",
     "createdAt": "2026-05-08T10:58:30",
     "driverId": "TPT-BILL21",
+    "forceReopen": false,
+    "photo1Filename": "TASK_1778209110949_190_photo_1.jpg",
+    "photo1TakenAt": "2026-05-11T11:29:08.245Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1778209110949_190%2FTASK_1778209110949_190_photo_1.jpg?alt=media&token=8104dcec-f485-45d5-9250-c4383b669698",
+    "photo2Filename": "TASK_1778209110949_190_photo_2.jpg",
+    "photo2TakenAt": "2026-05-11T11:29:14.255Z",
+    "photo2Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1778209110949_190%2FTASK_1778209110949_190_photo_2.jpg?alt=media&token=4a7cb414-651c-4044-82e8-ff39e93029df",
     "rowIndex": 191,
-    "status": "PENDING",
-    "uploadBatch": 1778209110949
+    "status": "COMPLETED",
+    "uploadBatch": 1778209110949,
+    "uploadedAt": "2026-05-12T09:53:52.563Z"
   },
   "TASK_1778209110949_191": {
     "ACCOUNTNUMBER": "15577911",
@@ -340220,9 +340228,17 @@
     "ZIPCODE": "",
     "createdAt": "2026-05-08T10:58:30",
     "driverId": "TPT-BILL21",
+    "forceReopen": false,
+    "photo1Filename": "TASK_1778209110949_194_photo_1.jpg",
+    "photo1TakenAt": "2026-05-11T11:30:44.820Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1778209110949_194%2FTASK_1778209110949_194_photo_1.jpg?alt=media&token=0e7f9120-d629-4342-9d30-9a5dafbf3331",
+    "photo2Filename": "TASK_1778209110949_194_photo_2.jpg",
+    "photo2TakenAt": "2026-05-11T11:30:50.705Z",
+    "photo2Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1778209110949_194%2FTASK_1778209110949_194_photo_2.jpg?alt=media&token=d2d4b7d5-39c8-44ad-90c9-a2e276a346ef",
     "rowIndex": 195,
-    "status": "PENDING",
-    "uploadBatch": 1778209110949
+    "status": "COMPLETED",
+    "uploadBatch": 1778209110949,
+    "uploadedAt": "2026-05-12T09:53:58.390Z"
   },
   "TASK_1778209110949_195": {
     "ACCOUNTNUMBER": "15639695",
@@ -340619,9 +340635,17 @@
     "ZIPCODE": "",
     "createdAt": "2026-05-08T10:58:30",
     "driverId": "TPT-BILL21",
+    "forceReopen": false,
+    "photo1Filename": "TASK_1778209110949_210_photo_1.jpg",
+    "photo1TakenAt": "2026-05-11T11:31:13.059Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1778209110949_210%2FTASK_1778209110949_210_photo_1.jpg?alt=media&token=06feb469-24df-4ab5-b217-633aebf31b37",
+    "photo2Filename": "TASK_1778209110949_210_photo_2.jpg",
+    "photo2TakenAt": "2026-05-11T11:31:17.731Z",
+    "photo2Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1778209110949_210%2FTASK_1778209110949_210_photo_2.jpg?alt=media&token=92f870b3-6bc2-49f6-afde-0e9471c1e350",
     "rowIndex": 211,
-    "status": "PENDING",
-    "uploadBatch": 1778209110949
+    "status": "COMPLETED",
+    "uploadBatch": 1778209110949,
+    "uploadedAt": "2026-05-12T09:54:02.069Z"
   },
   "TASK_1778209110949_211": {
     "ACCOUNTNUMBER": "15577993",
@@ -340640,9 +340664,17 @@
     "ZIPCODE": "",
     "createdAt": "2026-05-08T10:58:30",
     "driverId": "TPT-BILL21",
+    "forceReopen": false,
+    "photo1Filename": "TASK_1778209110949_211_photo_1.jpg",
+    "photo1TakenAt": "2026-05-11T11:30:15.885Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1778209110949_211%2FTASK_1778209110949_211_photo_1.jpg?alt=media&token=871aea95-7c76-427a-b3fc-6075484c6dc0",
+    "photo2Filename": "TASK_1778209110949_211_photo_2.jpg",
+    "photo2TakenAt": "2026-05-11T11:30:21.121Z",
+    "photo2Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1778209110949_211%2FTASK_1778209110949_211_photo_2.jpg?alt=media&token=2e15fb98-45ae-4687-9a97-b6090347ac12",
     "rowIndex": 212,
-    "status": "PENDING",
-    "uploadBatch": 1778209110949
+    "status": "COMPLETED",
+    "uploadBatch": 1778209110949,
+    "uploadedAt": "2026-05-12T09:54:05.330Z"
   },
   "TASK_1778209110949_212": {
     "ACCOUNTNUMBER": "21644552",
@@ -340661,9 +340693,17 @@
     "ZIPCODE": "",
     "createdAt": "2026-05-08T10:58:30",
     "driverId": "TPT-BILL21",
+    "forceReopen": false,
+    "photo1Filename": "TASK_1778209110949_212_photo_1.jpg",
+    "photo1TakenAt": "2026-05-11T11:29:25.331Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1778209110949_212%2FTASK_1778209110949_212_photo_1.jpg?alt=media&token=d74065fa-532c-45ec-a7e8-1fd054640a06",
+    "photo2Filename": "TASK_1778209110949_212_photo_2.jpg",
+    "photo2TakenAt": "2026-05-11T11:29:30.438Z",
+    "photo2Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1778209110949_212%2FTASK_1778209110949_212_photo_2.jpg?alt=media&token=60c4ad05-ffe9-4e45-9ef6-ae33a15e1ab6",
     "rowIndex": 213,
-    "status": "PENDING",
-    "uploadBatch": 1778209110949
+    "status": "COMPLETED",
+    "uploadBatch": 1778209110949,
+    "uploadedAt": "2026-05-12T09:54:08.628Z"
   },
   "TASK_1778209110949_213": {
     "ACCOUNTNUMBER": "15616629",
@@ -340682,9 +340722,17 @@
     "ZIPCODE": "",
     "createdAt": "2026-05-08T10:58:30",
     "driverId": "TPT-BILL21",
+    "forceReopen": false,
+    "photo1Filename": "TASK_1778209110949_213_photo_1.jpg",
+    "photo1TakenAt": "2026-05-11T11:28:31.556Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1778209110949_213%2FTASK_1778209110949_213_photo_1.jpg?alt=media&token=d77cd537-a16a-4641-843a-55c8b93d558c",
+    "photo2Filename": "TASK_1778209110949_213_photo_2.jpg",
+    "photo2TakenAt": "2026-05-11T11:28:37.436Z",
+    "photo2Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1778209110949_213%2FTASK_1778209110949_213_photo_2.jpg?alt=media&token=03dbbbd0-7747-4010-a2cf-31def8d0e1b0",
     "rowIndex": 214,
-    "status": "PENDING",
-    "uploadBatch": 1778209110949
+    "status": "COMPLETED",
+    "uploadBatch": 1778209110949,
+    "uploadedAt": "2026-05-12T09:54:11.985Z"
   },
   "TASK_1778209110949_214": {
     "ACCOUNTNUMBER": "18250287",
