@@ -2098,5 +2098,17 @@
     "team": "Test team",
     "updatedAt": "2026-01-09T17:58:34.355Z",
     "vehicle": "Motor tesr"
+  },
+  "passwordtest": {
+    "address": "",
+    "contact": "",
+    "createdAt": "2026-05-12T19:07:16.824Z",
+    "driverCode": "passwordtest",
+    "name": "passwordtest",
+    "password": "00000",
+    "team": "",
+    "updatedAt": "2026-05-12T19:07:16.824Z",
+    "username": "passwordtest",
+    "vehicle": ""
   }
 }
