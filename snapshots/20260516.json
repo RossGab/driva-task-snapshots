@@ -135153,10 +135153,18 @@
     "SEQUENCE": "3360",
     "ZIPCODE": "",
     "createdAt": "2026-05-16T08:23:34",
+    "deliveryType": "D3-Inserted in Gate",
     "driverId": "MMS-BILL73",
+    "forceReopen": false,
+    "gate_or_mailbox_color": "Green",
+    "other_remarks": "",
+    "photo1Filename": "TASK_1778891014259_3519_photo_1.jpg",
+    "photo1TakenAt": "2026-05-17T03:31:39.967Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1778891014259_3519%2FTASK_1778891014259_3519_photo_1.jpg?alt=media&token=576b82cf-4cd7-4ffe-9c32-c87771a28a30",
     "rowIndex": 3520,
-    "status": "PENDING",
-    "uploadBatch": 1778891014259
+    "status": "COMPLETED",
+    "uploadBatch": 1778891014259,
+    "uploadedAt": "2026-05-17T12:49:06.940Z"
   },
   "TASK_1778891014259_352": {
     "ACCOUNTNUMBER": "15380213",
@@ -135760,10 +135768,18 @@
     "SEQUENCE": "3541",
     "ZIPCODE": "",
     "createdAt": "2026-05-16T08:23:34",
+    "deliveryType": "D3-Inserted in Gate",
     "driverId": "MMS-BILL73",
+    "forceReopen": false,
+    "gate_or_mailbox_color": "Gray",
+    "other_remarks": "",
+    "photo1Filename": "TASK_1778891014259_3538_photo_1.jpg",
+    "photo1TakenAt": "2026-05-17T04:19:22.210Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1778891014259_3538%2FTASK_1778891014259_3538_photo_1.jpg?alt=media&token=7e126aad-8c19-46a2-bf19-d4dd901186d4",
     "rowIndex": 3539,
-    "status": "PENDING",
-    "uploadBatch": 1778891014259
+    "status": "COMPLETED",
+    "uploadBatch": 1778891014259,
+    "uploadedAt": "2026-05-17T12:49:08.936Z"
   },
   "TASK_1778891014259_3539": {
     "ACCOUNTNUMBER": "10638580",
