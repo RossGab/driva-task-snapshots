@@ -13488,10 +13488,17 @@
     "SEQUENCE": "2210",
     "ZIPCODE": "",
     "createdAt": "2026-05-17T07:22:38",
+    "deliveryType": "D3-Inserted in Gate",
     "driverId": "MMS-BILL43",
+    "gate_or_mailbox_color": "Blue",
+    "other_remarks": "",
+    "photo1Filename": "TASK_1778973758270_478_photo_1.jpg",
+    "photo1TakenAt": "2026-05-17T10:46:37.064Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1778973758270_478%2FTASK_1778973758270_478_photo_1.jpg?alt=media&token=f2760360-2d16-4bfc-8392-9ad8c911c39f",
     "rowIndex": 479,
     "status": "PENDING",
-    "uploadBatch": 1778973758270
+    "uploadBatch": 1778973758270,
+    "uploadedAt": "2026-05-18T00:35:52.148Z"
   },
   "TASK_1778973758270_479": {
     "ACCOUNTNUMBER": "11992150",
