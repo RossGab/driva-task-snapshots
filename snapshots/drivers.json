@@ -7,7 +7,7 @@
     "name": "Paolo",
     "password": "00000",
     "team": "",
-    "updatedAt": "2026-02-01T19:51:20.535Z",
+    "updatedAt": "2026-05-18T03:42:34.883Z",
     "username": "1234592",
     "vehicle": ""
   },
@@ -225,6 +225,18 @@
     "team": "",
     "updatedAt": "2026-04-08T02:42:13.092Z",
     "username": "BRIAN",
+    "vehicle": ""
+  },
+  "DRIVER": {
+    "address": "",
+    "contact": "",
+    "createdAt": "2026-05-18T03:45:56.093Z",
+    "driverCode": "DRIVER",
+    "name": "DRIVER",
+    "password": "112281",
+    "team": "",
+    "updatedAt": "2026-05-18T03:45:56.093Z",
+    "username": "DRIVER",
     "vehicle": ""
   },
   "EWAC_1": {
@@ -1905,6 +1917,26 @@
     "team": "",
     "updatedAt": "2026-05-12T00:44:33.466Z",
     "username": "PAS-BILL55",
+    "vehicle": ""
+  },
+  "PAS-BILL56": {
+    "address": "",
+    "contact": "",
+    "createdAt": "2026-05-18T01:10:46.530Z",
+    "driverCode": "PAS-BILL56",
+    "name": "KIMBERLY MAE RIVERA",
+    "team": "",
+    "updatedAt": "2026-05-18T01:10:46.530Z",
+    "vehicle": ""
+  },
+  "PAS-BILL57": {
+    "address": "",
+    "contact": "",
+    "createdAt": "2026-05-18T01:11:15.401Z",
+    "driverCode": "PAS-BILL57",
+    "name": "MISYEL AUBREY CARTASANO",
+    "team": "",
+    "updatedAt": "2026-05-18T01:11:15.401Z",
     "vehicle": ""
   },
   "PAS-BILL6": {
