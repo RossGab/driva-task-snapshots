@@ -295725,10 +295725,21 @@
     "SEQUENCE": "'03515",
     "ZIPCODE": "",
     "createdAt": "2026-05-28T08:54:15",
+    "deliveryType": "BILL NOT RECEIVED",
     "driverId": "AUDIT12",
+    "forceReopen": false,
+    "gate_or_mailbox_color": "Blue",
+    "last_reading": "May 2026",
+    "photo1Filename": "TASK_1779929655398_9_photo_1.jpg",
+    "photo1TakenAt": "2026-05-28T09:28:34.681Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1779929655398_9%2FTASK_1779929655398_9_photo_1.jpg?alt=media&token=d1745625-34c4-4dd1-92a6-def5b3b98bef",
+    "relationship_to_owner": "Owner",
+    "remarks": "As per SG sabulo no bill recieved at nakausap na daw nya Yun nag dedeliver ng bills na babae wala dun ang bill nila",
+    "respondent_name": "Great circle holdings inc.",
     "rowIndex": 10,
-    "status": "PENDING",
-    "uploadBatch": 1779929655398
+    "status": "COMPLETED",
+    "uploadBatch": 1779929655398,
+    "uploadedAt": "2026-05-29T02:09:50.947Z"
   },
   "TASK_1779932194022_0": {
     "ACCOUNTNUMBER": "14701806",
@@ -338305,10 +338316,18 @@
     "SEQUENCE": "1610",
     "ZIPCODE": "",
     "createdAt": "2026-05-28T10:08:59",
+    "deliveryType": "D1-Received",
     "driverId": "TPT-BILL18",
+    "other_remarks": "",
+    "photo1Filename": "TASK_1779934139665_1021_photo_1.jpg",
+    "photo1TakenAt": "2026-05-28T05:54:35.255Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1779934139665_1021%2FTASK_1779934139665_1021_photo_1.jpg?alt=media&token=253b411a-fd46-43fe-aab2-c86ceac568db",
+    "received_by": "felipe",
+    "relationship_to_owner": "relative",
     "rowIndex": 1022,
     "status": "PENDING",
-    "uploadBatch": 1779934139665
+    "uploadBatch": 1779934139665,
+    "uploadedAt": "2026-05-29T02:02:22.177Z"
   },
   "TASK_1779934139665_1022": {
     "ACCOUNTNUMBER": "15576057",
