@@ -1,16 +1,4 @@
 {
-  "1234592": {
-    "address": "",
-    "contact": "",
-    "createdAt": "2026-01-19T14:37:02.251Z",
-    "driverCode": "1234592",
-    "name": "Paolo",
-    "password": "00000",
-    "team": "",
-    "updatedAt": "2026-05-18T03:42:34.883Z",
-    "username": "1234592",
-    "vehicle": ""
-  },
   "AUDIT11": {
     "address": "",
     "contact": "",
@@ -225,18 +213,6 @@
     "team": "",
     "updatedAt": "2026-04-08T02:42:13.092Z",
     "username": "BRIAN",
-    "vehicle": ""
-  },
-  "DRIVER": {
-    "address": "",
-    "contact": "",
-    "createdAt": "2026-05-18T03:45:56.093Z",
-    "driverCode": "DRIVER",
-    "name": "DRIVER",
-    "password": "112281",
-    "team": "",
-    "updatedAt": "2026-05-18T03:45:56.093Z",
-    "username": "DRIVER",
     "vehicle": ""
   },
   "EWAC_1": {
@@ -681,18 +657,6 @@
     "team": "",
     "updatedAt": "2026-02-20T23:53:15.725Z",
     "username": "MMS-BILL40",
-    "vehicle": ""
-  },
-  "MMS-BILL41": {
-    "address": "",
-    "contact": "-",
-    "createdAt": "2026-02-20T23:53:24.425Z",
-    "driverCode": "MMS-BILL41",
-    "name": "LESTER JOHN ROBEDILLO",
-    "password": "00000",
-    "team": "",
-    "updatedAt": "2026-02-20T23:53:24.425Z",
-    "username": "MMS-BILL41",
     "vehicle": ""
   },
   "MMS-BILL42": {
