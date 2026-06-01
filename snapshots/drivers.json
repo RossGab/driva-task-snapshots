@@ -1323,6 +1323,36 @@
     "updatedAt": "2026-06-01T01:33:45.195Z",
     "vehicle": ""
   },
+  "MMS-CRS34": {
+    "address": "",
+    "contact": "-",
+    "createdAt": "2026-06-01T02:13:59.185Z",
+    "driverCode": "MMS-CRS34",
+    "name": "RIZALINO SAMSON III",
+    "team": "",
+    "updatedAt": "2026-06-01T02:13:59.185Z",
+    "vehicle": ""
+  },
+  "MMS-CRS35": {
+    "address": "",
+    "contact": "-",
+    "createdAt": "2026-06-01T02:14:09.902Z",
+    "driverCode": "MMS-CRS35",
+    "name": "LLOYD DE VERA",
+    "team": "",
+    "updatedAt": "2026-06-01T02:14:09.902Z",
+    "vehicle": ""
+  },
+  "MMS-CRS36": {
+    "address": "",
+    "contact": "-",
+    "createdAt": "2026-06-01T02:14:19.248Z",
+    "driverCode": "MMS-CRS36",
+    "name": "JEFFERSON TAVERA",
+    "team": "",
+    "updatedAt": "2026-06-01T02:14:19.248Z",
+    "vehicle": ""
+  },
   "MMS-CRS4": {
     "address": "",
     "contact": "",
