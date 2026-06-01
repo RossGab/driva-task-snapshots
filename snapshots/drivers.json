@@ -1039,6 +1039,16 @@
     "updatedAt": "2026-05-28T23:17:57.653Z",
     "vehicle": ""
   },
+  "MMS-BILL77": {
+    "address": "",
+    "contact": "-",
+    "createdAt": "2026-06-01T01:19:29.425Z",
+    "driverCode": "MMS-BILL77",
+    "name": "NELSON CABRERA",
+    "team": "",
+    "updatedAt": "2026-06-01T01:19:29.425Z",
+    "vehicle": ""
+  },
   "MMS-BILL8": {
     "address": "",
     "contact": "",
@@ -1301,6 +1311,16 @@
     "team": "",
     "updatedAt": "2026-05-11T00:45:15.844Z",
     "username": "MMS-CRS32",
+    "vehicle": ""
+  },
+  "MMS-CRS33": {
+    "address": "",
+    "contact": "-",
+    "createdAt": "2026-06-01T01:33:45.195Z",
+    "driverCode": "MMS-CRS33",
+    "name": "ALVIN SY",
+    "team": "",
+    "updatedAt": "2026-06-01T01:33:45.195Z",
     "vehicle": ""
   },
   "MMS-CRS4": {
