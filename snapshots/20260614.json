@@ -27600,10 +27600,17 @@
     "SEQUENCE": "1050",
     "ZIPCODE": "",
     "createdAt": "2026-06-14T07:47:42",
+    "deliveryType": "D5-Delivered to SA",
     "driverId": "TPT-BILL12",
+    "forceReopen": false,
+    "other_remarks": "Can't find house location",
+    "photo1Filename": "TASK_1781394462049_110_photo_1.jpg",
+    "photo1TakenAt": "2026-06-15T00:03:20.180Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1781394462049_110%2FTASK_1781394462049_110_photo_1.jpg?alt=media&token=da0f6438-78a7-4b20-b574-1e46db070220",
     "rowIndex": 111,
-    "status": "PENDING",
-    "uploadBatch": 1781394462049
+    "status": "COMPLETED",
+    "uploadBatch": 1781394462049,
+    "uploadedAt": "2026-06-15T00:05:18.713Z"
   },
   "TASK_1781394462049_111": {
     "ACCOUNTNUMBER": "14874184",
@@ -35237,10 +35244,17 @@
     "SEQUENCE": "2452",
     "ZIPCODE": "",
     "createdAt": "2026-06-14T07:47:42",
+    "deliveryType": "D5-Delivered to SA",
     "driverId": "TPT-BILL12",
+    "forceReopen": false,
+    "other_remarks": "Can't findi house location",
+    "photo1Filename": "TASK_1781394462049_348_photo_1.jpg",
+    "photo1TakenAt": "2026-06-15T00:03:40.840Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1781394462049_348%2FTASK_1781394462049_348_photo_1.jpg?alt=media&token=e13ec761-d765-466b-a463-acdfac704997",
     "rowIndex": 349,
-    "status": "PENDING",
-    "uploadBatch": 1781394462049
+    "status": "COMPLETED",
+    "uploadBatch": 1781394462049,
+    "uploadedAt": "2026-06-15T00:05:23.104Z"
   },
   "TASK_1781394462049_349": {
     "ACCOUNTNUMBER": "21401056",
@@ -36346,10 +36360,17 @@
     "SEQUENCE": "3613",
     "ZIPCODE": "",
     "createdAt": "2026-06-14T07:47:42",
+    "deliveryType": "D5-Delivered to SA",
     "driverId": "TPT-BILL12",
+    "forceReopen": false,
+    "other_remarks": "Can't find house location",
+    "photo1Filename": "TASK_1781394462049_393_photo_1.jpg",
+    "photo1TakenAt": "2026-06-15T00:04:28.252Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1781394462049_393%2FTASK_1781394462049_393_photo_1.jpg?alt=media&token=9ad38b22-338e-43ab-87eb-5a11391d5a13",
     "rowIndex": 394,
-    "status": "PENDING",
-    "uploadBatch": 1781394462049
+    "status": "COMPLETED",
+    "uploadBatch": 1781394462049,
+    "uploadedAt": "2026-06-15T00:05:26.949Z"
   },
   "TASK_1781394462049_394": {
     "ACCOUNTNUMBER": "24755766",
@@ -37433,10 +37454,17 @@
     "SEQUENCE": "3695",
     "ZIPCODE": "",
     "createdAt": "2026-06-14T07:47:42",
+    "deliveryType": "D5-Delivered to SA",
     "driverId": "TPT-BILL12",
+    "forceReopen": false,
+    "other_remarks": "Can't find house location",
+    "photo1Filename": "TASK_1781394462049_437_photo_1.jpg",
+    "photo1TakenAt": "2026-06-15T00:04:05.322Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1781394462049_437%2FTASK_1781394462049_437_photo_1.jpg?alt=media&token=ddc6eb8c-9c07-4e72-bb62-a22acaa37604",
     "rowIndex": 438,
-    "status": "PENDING",
-    "uploadBatch": 1781394462049
+    "status": "COMPLETED",
+    "uploadBatch": 1781394462049,
+    "uploadedAt": "2026-06-15T00:05:29.880Z"
   },
   "TASK_1781394462049_438": {
     "ACCOUNTNUMBER": "91064271",
