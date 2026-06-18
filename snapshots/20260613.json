@@ -456046,10 +456046,18 @@
     "SEQUENCE": "194",
     "ZIPCODE": "",
     "createdAt": "2026-06-13T09:04:55",
+    "deliveryType": "D3-Inserted in Gate",
     "driverId": "PAS-BILL17",
+    "forceReopen": false,
+    "gate_or_mailbox_color": "black",
+    "other_remarks": "",
+    "photo1Filename": "TASK_1781312695498_706_photo_1.jpg",
+    "photo1TakenAt": "2026-06-18T09:35:09.225Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1781312695498_706%2FTASK_1781312695498_706_photo_1.jpg?alt=media&token=b7371870-255d-49cd-a4af-96617b68698e",
     "rowIndex": 707,
-    "status": "PENDING",
-    "uploadBatch": 1781312695498
+    "status": "COMPLETED",
+    "uploadBatch": 1781312695498,
+    "uploadedAt": "2026-06-18T09:37:56.168Z"
   },
   "TASK_1781312695498_707": {
     "ACCOUNTNUMBER": "23649170",
@@ -456555,10 +456563,19 @@
     "SEQUENCE": "231",
     "ZIPCODE": "",
     "createdAt": "2026-06-13T09:04:55",
+    "deliveryType": "D1-Received",
     "driverId": "PAS-BILL17",
+    "forceReopen": false,
+    "other_remarks": "",
+    "photo1Filename": "TASK_1781312695498_721_photo_1.jpg",
+    "photo1TakenAt": "2026-06-18T09:24:43.151Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1781312695498_721%2FTASK_1781312695498_721_photo_1.jpg?alt=media&token=7b1285c0-1d8b-4d98-b4a3-c3867fef4edf",
+    "received_by": "MARY GRACE PAGSALIGAN",
+    "relationship_to_owner": "family",
     "rowIndex": 722,
-    "status": "PENDING",
-    "uploadBatch": 1781312695498
+    "status": "COMPLETED",
+    "uploadBatch": 1781312695498,
+    "uploadedAt": "2026-06-18T09:28:20.980Z"
   },
   "TASK_1781312695498_722": {
     "ACCOUNTNUMBER": "24644903",
