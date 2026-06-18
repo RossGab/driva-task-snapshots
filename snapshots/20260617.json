@@ -35260,10 +35260,17 @@
     "SEQUENCE": "2835",
     "ZIPCODE": "",
     "createdAt": "2026-06-17T07:34:41",
+    "deliveryType": "D5-Delivered to SA",
     "driverId": "TPT-BILL13",
+    "forceReopen": false,
+    "other_remarks": "Diko makita e, walang nakakakilala",
+    "photo1Filename": "TASK_1781652881781_2106_photo_1.jpg",
+    "photo1TakenAt": "2026-06-18T07:59:06.044Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1781652881781_2106%2FTASK_1781652881781_2106_photo_1.jpg?alt=media&token=c38ac404-7208-4ad6-bba1-52df21971426",
     "rowIndex": 2107,
-    "status": "PENDING",
-    "uploadBatch": 1781652881781
+    "status": "COMPLETED",
+    "uploadBatch": 1781652881781,
+    "uploadedAt": "2026-06-18T11:51:14.844Z"
   },
   "TASK_1781652881781_211": {
     "ACCOUNTNUMBER": "24405635",
