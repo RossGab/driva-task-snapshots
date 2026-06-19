@@ -406366,10 +406366,20 @@
     "SEQUENCE": "10",
     "ZIPCODE": "",
     "createdAt": "2026-06-17T08:46:33",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "Brown",
     "driverId": "MMS-BILL75",
+    "forceReopen": false,
+    "photo1Filename": "TASK_1781657193999_627_photo_1.jpg",
+    "photo1TakenAt": "2026-06-19T10:02:12.947Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1781657193999_627%2FTASK_1781657193999_627_photo_1.jpg?alt=media&token=f95a7c39-89bf-4abe-a014-f028d3b90386",
+    "photo2Filename": "TASK_1781657193999_627_photo_2.jpg",
+    "photo2TakenAt": "2026-06-19T10:02:21.039Z",
+    "photo2Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1781657193999_627%2FTASK_1781657193999_627_photo_2.jpg?alt=media&token=d0ab5724-7f44-4553-85a4-ee15506b6fca",
     "rowIndex": 628,
-    "status": "PENDING",
-    "uploadBatch": 1781657193999
+    "status": "COMPLETED",
+    "uploadBatch": 1781657193999,
+    "uploadedAt": "2026-06-19T10:02:41.729Z"
   },
   "TASK_1781657193999_628": {
     "ACCOUNTNUMBER": "17227680",
