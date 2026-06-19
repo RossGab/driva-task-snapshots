@@ -191,6 +191,16 @@
     "username": "AUDIT3",
     "vehicle": ""
   },
+  "AUDITMARC": {
+    "address": "",
+    "contact": "",
+    "createdAt": "2026-06-19T01:01:47.794Z",
+    "driverCode": "AUDITMARC",
+    "name": "MARC MORALDE",
+    "team": "",
+    "updatedAt": "2026-06-19T01:01:47.794Z",
+    "vehicle": ""
+  },
   "BIWC-BILL1": {
     "address": "",
     "contact": "",
