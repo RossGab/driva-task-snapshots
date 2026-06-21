@@ -211938,10 +211938,19 @@
     "SEQUENCE": "50",
     "ZIPCODE": "",
     "createdAt": "2026-06-16T08:27:02",
+    "deliveryType": "D1-Received",
     "driverId": "PAS-BILL17",
+    "forceReopen": false,
+    "other_remarks": "",
+    "photo1Filename": "TASK_1781569622975_2_photo_1.jpg",
+    "photo1TakenAt": "2026-06-21T09:42:02.025Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1781569622975_2%2FTASK_1781569622975_2_photo_1.jpg?alt=media&token=a17ca2e1-bcfc-4176-9716-37210e14fa18",
+    "received_by": "EVANGELINE CENINA",
+    "relationship_to_owner": "family",
     "rowIndex": 3,
-    "status": "PENDING",
-    "uploadBatch": 1781569622975
+    "status": "COMPLETED",
+    "uploadBatch": 1781569622975,
+    "uploadedAt": "2026-06-21T09:47:02.958Z"
   },
   "TASK_1781569622975_20": {
     "ACCOUNTNUMBER": "18469275",
@@ -232792,10 +232801,19 @@
     "SEQUENCE": "1960",
     "ZIPCODE": "",
     "createdAt": "2026-06-16T08:27:02",
+    "deliveryType": "D1-Received",
     "driverId": "PAS-BILL17",
+    "forceReopen": false,
+    "other_remarks": "",
+    "photo1Filename": "TASK_1781569622975_65_photo_1.jpg",
+    "photo1TakenAt": "2026-06-21T09:45:46.234Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1781569622975_65%2FTASK_1781569622975_65_photo_1.jpg?alt=media&token=59443e94-7e32-4bf9-817d-5ff6cc7a370c",
+    "received_by": "SANCHO SERAPION",
+    "relationship_to_owner": "family",
     "rowIndex": 66,
-    "status": "PENDING",
-    "uploadBatch": 1781569622975
+    "status": "COMPLETED",
+    "uploadBatch": 1781569622975,
+    "uploadedAt": "2026-06-21T09:47:06.200Z"
   },
   "TASK_1781569622975_650": {
     "ACCOUNTNUMBER": "18813722",
