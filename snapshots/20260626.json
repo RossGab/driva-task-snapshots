@@ -82461,10 +82461,20 @@
     "SEQUENCE": "30",
     "ZIPCODE": "",
     "createdAt": "2026-06-26T07:36:56",
+    "deliveryType": "D5-Delivered to SA",
     "driverId": "TPT-BILL35",
+    "forceReopen": false,
+    "other_remarks": "Walang nakatira",
+    "photo1Filename": "TASK_1782430616378_3_photo_1.jpg",
+    "photo1TakenAt": "2026-06-27T00:34:49.231Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1782430616378_3%2FTASK_1782430616378_3_photo_1.jpg?alt=media&token=e0f2fbb4-2322-4668-8b03-193f9c65fdb4",
+    "photo2Filename": "TASK_1782430616378_3_photo_2.jpg",
+    "photo2TakenAt": "2026-06-27T00:35:36.253Z",
+    "photo2Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1782430616378_3%2FTASK_1782430616378_3_photo_2.jpg?alt=media&token=c89361f4-4efb-4656-aba5-8847cf765791",
     "rowIndex": 4,
-    "status": "PENDING",
-    "uploadBatch": 1782430616378
+    "status": "COMPLETED",
+    "uploadBatch": 1782430616378,
+    "uploadedAt": "2026-06-27T01:30:24.109Z"
   },
   "TASK_1782430616378_30": {
     "ACCOUNTNUMBER": "16895996",
@@ -83705,10 +83715,17 @@
     "SEQUENCE": "2720",
     "ZIPCODE": "",
     "createdAt": "2026-06-26T07:36:56",
+    "deliveryType": "D3-Inserted in Gate",
     "driverId": "TPT-BILL35",
+    "gate_or_mailbox_color": "Blue",
+    "other_remarks": "",
+    "photo1Filename": "TASK_1782430616378_334_photo_1.jpg",
+    "photo1TakenAt": "2026-06-27T00:37:45.839Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1782430616378_334%2FTASK_1782430616378_334_photo_1.jpg?alt=media&token=807c5b30-690e-4e62-97bb-a1ad5041bb53",
     "rowIndex": 335,
     "status": "PENDING",
-    "uploadBatch": 1782430616378
+    "uploadBatch": 1782430616378,
+    "uploadedAt": "2026-06-27T01:30:26.764Z"
   },
   "TASK_1782430616378_335": {
     "ACCOUNTNUMBER": "19525382",
