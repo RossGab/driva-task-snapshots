@@ -249,6 +249,36 @@
     "username": "JENIFER JUGNO",
     "vehicle": ""
   },
+  "LAGUNA-CSL1": {
+    "address": "",
+    "contact": "",
+    "createdAt": "2026-07-09T07:08:01.149Z",
+    "driverCode": "LAGUNA-CSL1",
+    "name": "ROGER VILLAGENIO",
+    "team": "",
+    "updatedAt": "2026-07-09T07:08:01.149Z",
+    "vehicle": ""
+  },
+  "LAGUNA-CSL2": {
+    "address": "",
+    "contact": "",
+    "createdAt": "2026-07-09T07:08:41.594Z",
+    "driverCode": "LAGUNA-CSL2",
+    "name": "JESSIE  SANVICTORES",
+    "team": "",
+    "updatedAt": "2026-07-09T07:08:41.594Z",
+    "vehicle": ""
+  },
+  "LAGUNA-CSL3": {
+    "address": "",
+    "contact": "",
+    "createdAt": "2026-07-09T07:09:27.380Z",
+    "driverCode": "LAGUNA-CSL3",
+    "name": "REYNOLL ARGUIL",
+    "team": "",
+    "updatedAt": "2026-07-09T07:09:27.380Z",
+    "vehicle": ""
+  },
   "LAGUNABILL-1": {
     "address": "",
     "contact": "",
