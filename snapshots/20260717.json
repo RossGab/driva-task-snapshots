@@ -12499,15 +12499,19 @@
     "createdAt": "2026-07-17T07:05:25",
     "deliveryType": "D3-Inserted in Gate",
     "driverId": "TPT-BILL9",
+    "forceReopen": false,
     "gate_or_mailbox_color": "Gate red",
     "other_remarks": "",
     "photo1Filename": "TASK_1784243125428_1482_photo_1.jpg",
     "photo1TakenAt": "2026-07-18T06:03:25.774Z",
     "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1784243125428_1482%2FTASK_1784243125428_1482_photo_1.jpg?alt=media&token=8633d1fd-f7ca-44b0-9c16-909a8938f05c",
+    "photo2Filename": "TASK_1784243125428_1482_photo_2.jpg",
+    "photo2TakenAt": "2026-07-18T06:03:31.659Z",
+    "photo2Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1784243125428_1482%2FTASK_1784243125428_1482_photo_2.jpg?alt=media&token=f51d6165-876e-4761-b709-50499e35a2a1",
     "rowIndex": 1483,
-    "status": "PENDING",
+    "status": "COMPLETED",
     "uploadBatch": 1784243125428,
-    "uploadedAt": "2026-07-18T06:34:47.614Z"
+    "uploadedAt": "2026-07-18T06:35:12.194Z"
   },
   "TASK_1784243125428_1483": {
     "ACCOUNTNUMBER": "16010594",
