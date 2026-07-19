@@ -115760,10 +115760,17 @@
     "SEQUENCE": "4200",
     "ZIPCODE": "",
     "createdAt": "2026-07-18T07:54:16",
+    "deliveryType": "D5-Delivered to SA",
     "driverId": "TPT-BILL11",
+    "forceReopen": false,
+    "other_remarks": "return to SA",
+    "photo1Filename": "TASK_1784332456363_554_photo_1.jpg",
+    "photo1TakenAt": "2026-07-19T04:28:33.691Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1784332456363_554%2FTASK_1784332456363_554_photo_1.jpg?alt=media&token=b52df4b5-471c-4801-a9ca-a5c50d620e9c",
     "rowIndex": 555,
-    "status": "PENDING",
-    "uploadBatch": 1784332456363
+    "status": "COMPLETED",
+    "uploadBatch": 1784332456363,
+    "uploadedAt": "2026-07-19T04:30:50.393Z"
   },
   "TASK_1784332456363_555": {
     "ACCOUNTNUMBER": "22493017",
@@ -212594,6 +212601,7 @@
     "createdAt": "2026-07-18T08:41:59",
     "deliveryType": "BILL RECEIVED",
     "driverId": "AUDIT18",
+    "forceReopen": false,
     "gate_or_mailbox_color": "Gray",
     "last_reading": "0118",
     "photo1Filename": "TASK_1784335319945_59_photo_1.jpg",
@@ -212602,13 +212610,16 @@
     "photo2Filename": "TASK_1784335319945_59_photo_2.jpg",
     "photo2TakenAt": "2026-07-19T04:22:39.619Z",
     "photo2Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1784335319945_59%2FTASK_1784335319945_59_photo_2.jpg?alt=media&token=d60923eb-adcd-4966-93d4-c83aa70bf634",
+    "photo3Filename": "TASK_1784335319945_59_photo_3.jpg",
+    "photo3TakenAt": "2026-07-19T04:24:57.319Z",
+    "photo3Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1784335319945_59%2FTASK_1784335319945_59_photo_3.jpg?alt=media&token=7d5664d5-a415-4e41-a7a6-7124ef85e1c4",
     "relationship_to_owner": "N//A",
     "remarks": "Confirmed bill delivered and received,  both meter # address and photos are exactly perfect match",
     "respondent_name": "Non respondent",
     "rowIndex": 60,
-    "status": "PENDING",
+    "status": "COMPLETED",
     "uploadBatch": 1784335319945,
-    "uploadedAt": "2026-07-19T04:27:00.430Z"
+    "uploadedAt": "2026-07-19T04:27:02.970Z"
   },
   "TASK_1784335319945_6": {
     "ACCOUNTNUMBER": "12358904",
