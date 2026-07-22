@@ -86532,10 +86532,17 @@
     "SEQUENCE": "4358",
     "ZIPCODE": "",
     "createdAt": "2026-07-21T07:48:40",
+    "deliveryType": "D5-Delivered to SA",
     "driverId": "TPT-BILL36",
+    "forceReopen": false,
+    "other_remarks": "Di ko po talaga makita, pinatayan ko na ng metro pero walang nalabas, nalibing nalang po Ako kakahanap",
+    "photo1Filename": "TASK_1784591320395_216_photo_1.jpg",
+    "photo1TakenAt": "2026-07-22T10:03:38.384Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1784591320395_216%2FTASK_1784591320395_216_photo_1.jpg?alt=media&token=d42ea1df-ecfb-4104-a7aa-bd2f61a27d29",
     "rowIndex": 217,
-    "status": "PENDING",
-    "uploadBatch": 1784591320395
+    "status": "COMPLETED",
+    "uploadBatch": 1784591320395,
+    "uploadedAt": "2026-07-22T10:07:31.931Z"
   },
   "TASK_1784591320395_217": {
     "ACCOUNTNUMBER": "22527151",
@@ -86553,10 +86560,17 @@
     "SEQUENCE": "4360",
     "ZIPCODE": "",
     "createdAt": "2026-07-21T07:48:40",
+    "deliveryType": "D5-Delivered to SA",
     "driverId": "TPT-BILL36",
+    "forceReopen": false,
+    "other_remarks": "Di ko po talaga makita, pinatayan ko na po ng metro pero walang nalabas, nalibing nalang po Ako kakahanap, di rin Kilala ng mga pinagtanungan ko",
+    "photo1Filename": "TASK_1784591320395_217_photo_1.jpg",
+    "photo1TakenAt": "2026-07-22T10:05:54.726Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1784591320395_217%2FTASK_1784591320395_217_photo_1.jpg?alt=media&token=81d664df-f023-4c96-af09-62db02e1ff23",
     "rowIndex": 218,
-    "status": "PENDING",
-    "uploadBatch": 1784591320395
+    "status": "COMPLETED",
+    "uploadBatch": 1784591320395,
+    "uploadedAt": "2026-07-22T10:07:35.502Z"
   },
   "TASK_1784591320395_218": {
     "ACCOUNTNUMBER": "22155864",
@@ -87033,10 +87047,17 @@
     "SEQUENCE": "4420",
     "ZIPCODE": "",
     "createdAt": "2026-07-21T07:48:40",
+    "deliveryType": "D5-Delivered to SA",
     "driverId": "TPT-BILL36",
+    "forceReopen": false,
+    "other_remarks": "Di ko po talaga makita, pinatayan ko na po ng metro pero walang nalabas, nalibing nalang po Ako kakahanap, di rin Kilala ng mga pinagtanungan ko",
+    "photo1Filename": "TASK_1784591320395_230_photo_1.jpg",
+    "photo1TakenAt": "2026-07-22T10:04:42.194Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1784591320395_230%2FTASK_1784591320395_230_photo_1.jpg?alt=media&token=270f8ae1-1ef7-4bc9-8d6c-f69c2333c25c",
     "rowIndex": 231,
-    "status": "PENDING",
-    "uploadBatch": 1784591320395
+    "status": "COMPLETED",
+    "uploadBatch": 1784591320395,
+    "uploadedAt": "2026-07-22T10:07:38.398Z"
   },
   "TASK_1784591320395_231": {
     "ACCOUNTNUMBER": "19357205",
@@ -89186,10 +89207,17 @@
     "SEQUENCE": "4870",
     "ZIPCODE": "",
     "createdAt": "2026-07-21T07:48:40",
+    "deliveryType": "D5-Delivered to SA",
     "driverId": "TPT-BILL36",
+    "forceReopen": false,
+    "other_remarks": "Di ko po talaga makita, pinatayan ko na po ng metro pero walang nalabas, nalibing nalang po Ako kakahanap, di rin Kilala ng mga pinagtanungan ko",
+    "photo1Filename": "TASK_1784591320395_290_photo_1.jpg",
+    "photo1TakenAt": "2026-07-22T10:06:09.440Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1784591320395_290%2FTASK_1784591320395_290_photo_1.jpg?alt=media&token=3418ee51-c4b3-4617-aeef-c41a127be137",
     "rowIndex": 291,
-    "status": "PENDING",
-    "uploadBatch": 1784591320395
+    "status": "COMPLETED",
+    "uploadBatch": 1784591320395,
+    "uploadedAt": "2026-07-22T10:07:41.860Z"
   },
   "TASK_1784591320395_291": {
     "ACCOUNTNUMBER": "22214872",
@@ -89207,10 +89235,17 @@
     "SEQUENCE": "4890",
     "ZIPCODE": "",
     "createdAt": "2026-07-21T07:48:40",
+    "deliveryType": "D5-Delivered to SA",
     "driverId": "TPT-BILL36",
+    "forceReopen": false,
+    "other_remarks": "Di ko po talaga makita, pinatayan ko na po ng metro pero walang nalabas, nalibing nalang po Ako kakahanap, di rin Kilala ng mga pinagtanungan ko",
+    "photo1Filename": "TASK_1784591320395_291_photo_1.jpg",
+    "photo1TakenAt": "2026-07-22T10:06:41.488Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1784591320395_291%2FTASK_1784591320395_291_photo_1.jpg?alt=media&token=986087b7-0cc9-43b5-b8bc-49b06263f45c",
     "rowIndex": 292,
-    "status": "PENDING",
-    "uploadBatch": 1784591320395
+    "status": "COMPLETED",
+    "uploadBatch": 1784591320395,
+    "uploadedAt": "2026-07-22T10:07:44.629Z"
   },
   "TASK_1784591320395_292": {
     "ACCOUNTNUMBER": "20656407",
@@ -89421,10 +89456,17 @@
     "SEQUENCE": "5510",
     "ZIPCODE": "",
     "createdAt": "2026-07-21T07:48:40",
+    "deliveryType": "D5-Delivered to SA",
     "driverId": "TPT-BILL36",
+    "forceReopen": false,
+    "other_remarks": "Di ko po talaga makita, pinatayan ko na po ng metro pero walang nalabas, nalibing nalang po Ako kakahanap, di rin Kilala ng mga pinagtanungan ko",
+    "photo1Filename": "TASK_1784591320395_298_photo_1.jpg",
+    "photo1TakenAt": "2026-07-22T10:07:14.469Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1784591320395_298%2FTASK_1784591320395_298_photo_1.jpg?alt=media&token=c68367ef-9e42-4453-ac64-b135a2a2d356",
     "rowIndex": 299,
-    "status": "PENDING",
-    "uploadBatch": 1784591320395
+    "status": "COMPLETED",
+    "uploadBatch": 1784591320395,
+    "uploadedAt": "2026-07-22T10:07:47.283Z"
   },
   "TASK_1784591320395_299": {
     "ACCOUNTNUMBER": "20660811",
@@ -89603,10 +89645,17 @@
     "SEQUENCE": "5550",
     "ZIPCODE": "",
     "createdAt": "2026-07-21T07:48:40",
+    "deliveryType": "D5-Delivered to SA",
     "driverId": "TPT-BILL36",
+    "forceReopen": false,
+    "other_remarks": "Di ko po talaga makita, pinatayan ko na po ng metro pero walang nalabas, nalibing nalang po Ako kakahanap, di rin Kilala ng mga pinagtanungan ko",
+    "photo1Filename": "TASK_1784591320395_302_photo_1.jpg",
+    "photo1TakenAt": "2026-07-22T10:07:00.921Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1784591320395_302%2FTASK_1784591320395_302_photo_1.jpg?alt=media&token=19dc0efb-2c53-4907-bf12-37711377a0f3",
     "rowIndex": 303,
-    "status": "PENDING",
-    "uploadBatch": 1784591320395
+    "status": "COMPLETED",
+    "uploadBatch": 1784591320395,
+    "uploadedAt": "2026-07-22T10:07:49.982Z"
   },
   "TASK_1784591320395_303": {
     "ACCOUNTNUMBER": "20477930",
@@ -92992,10 +93041,17 @@
     "SEQUENCE": "3709",
     "ZIPCODE": "",
     "createdAt": "2026-07-21T07:48:40",
+    "deliveryType": "D5-Delivered to SA",
     "driverId": "TPT-BILL36",
+    "forceReopen": false,
+    "other_remarks": "Di ko po talaga makita Bahay, pinatayan ko na ng metro walang nalabas, di rin Kilala sa area",
+    "photo1Filename": "TASK_1784591320395_80_photo_1.jpg",
+    "photo1TakenAt": "2026-07-22T10:02:49.990Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1784591320395_80%2FTASK_1784591320395_80_photo_1.jpg?alt=media&token=b0537e93-9601-466c-ac35-de660f7933cd",
     "rowIndex": 81,
-    "status": "PENDING",
-    "uploadBatch": 1784591320395
+    "status": "COMPLETED",
+    "uploadBatch": 1784591320395,
+    "uploadedAt": "2026-07-22T10:07:52.817Z"
   },
   "TASK_1784591320395_81": {
     "ACCOUNTNUMBER": "24584585",
