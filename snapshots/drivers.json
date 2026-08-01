@@ -2331,6 +2331,26 @@
     "updatedAt": "2026-07-28T00:17:42.617Z",
     "vehicle": ""
   },
+  "PAS-BILL71": {
+    "address": "",
+    "contact": "",
+    "createdAt": "2026-08-01T00:07:23.241Z",
+    "driverCode": "PAS-BILL71",
+    "name": "JESUS SILVANO",
+    "team": "",
+    "updatedAt": "2026-08-01T00:07:23.241Z",
+    "vehicle": ""
+  },
+  "PAS-BILL72": {
+    "address": "",
+    "contact": "",
+    "createdAt": "2026-08-01T00:27:07.554Z",
+    "driverCode": "PAS-BILL72",
+    "name": "ARLON ARCABAL",
+    "team": "",
+    "updatedAt": "2026-08-01T00:27:07.554Z",
+    "vehicle": ""
+  },
   "PAS-BILL8": {
     "address": "",
     "contact": "",
