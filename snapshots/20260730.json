@@ -221490,10 +221490,19 @@
     "SEQUENCE": "480",
     "ZIPCODE": "",
     "createdAt": "2026-07-30T11:15:38",
+    "deliveryType": "D1-Received",
     "driverId": "MMS-BILL34",
+    "forceReopen": false,
+    "other_remarks": "",
+    "photo1Filename": "TASK_1785381338610_6_photo_1.jpg",
+    "photo1TakenAt": "2026-08-02T04:35:39.271Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1785381338610_6%2FTASK_1785381338610_6_photo_1.jpg?alt=media&token=00fd0767-c384-4e5e-8e74-dd72f10c982f",
+    "received_by": "Diaz",
+    "relationship_to_owner": "Caretaker",
     "rowIndex": 7,
-    "status": "PENDING",
-    "uploadBatch": 1785381338610
+    "status": "COMPLETED",
+    "uploadBatch": 1785381338610,
+    "uploadedAt": "2026-08-02T04:36:08.185Z"
   },
   "TASK_1785381338610_7": {
     "ACCOUNTNUMBER": "13916587",
