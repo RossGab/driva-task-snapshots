@@ -2259,6 +2259,16 @@
     "updatedAt": "2026-06-21T23:29:56.121Z",
     "vehicle": ""
   },
+  "PAS-BILL63": {
+    "address": "",
+    "contact": "",
+    "createdAt": "2026-08-03T00:52:10.105Z",
+    "driverCode": "PAS-BILL63",
+    "name": "ALAN PRIMAVERA",
+    "team": "",
+    "updatedAt": "2026-08-03T00:52:10.105Z",
+    "vehicle": ""
+  },
   "PAS-BILL64": {
     "address": "",
     "contact": "",
@@ -2309,6 +2319,16 @@
     "updatedAt": "2026-07-24T23:25:51.553Z",
     "vehicle": ""
   },
+  "PAS-BILL69": {
+    "address": "",
+    "contact": "",
+    "createdAt": "2026-08-03T01:27:03.828Z",
+    "driverCode": "PAS-BILL69",
+    "name": "MARJONE NABUA",
+    "team": "",
+    "updatedAt": "2026-08-03T01:27:03.828Z",
+    "vehicle": ""
+  },
   "PAS-BILL7": {
     "address": "",
     "contact": "",
@@ -2349,6 +2369,16 @@
     "name": "ARLON ARCABAL",
     "team": "",
     "updatedAt": "2026-08-01T00:27:07.554Z",
+    "vehicle": ""
+  },
+  "PAS-BILL73": {
+    "address": "",
+    "contact": "",
+    "createdAt": "2026-08-03T02:46:44.637Z",
+    "driverCode": "PAS-BILL73",
+    "name": "JESTONI",
+    "team": "",
+    "updatedAt": "2026-08-03T02:46:44.637Z",
     "vehicle": ""
   },
   "PAS-BILL8": {
