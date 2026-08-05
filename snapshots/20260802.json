@@ -1001,10 +1001,17 @@
     "SEQUENCE": "1330",
     "ZIPCODE": "",
     "createdAt": "2026-08-02T09:12:39",
+    "deliveryType": "D6-Bagsakan",
     "driverId": "PAS-BILL70",
+    "forceReopen": false,
+    "other_remarks": "Katiwala",
+    "photo1Filename": "TASK_1785633159012_128_photo_1.jpg",
+    "photo1TakenAt": "2026-08-03T01:09:14.567Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1785633159012_128%2FTASK_1785633159012_128_photo_1.jpg?alt=media&token=319fccb9-5c7b-4925-8090-eae4cf596b8f",
     "rowIndex": 129,
-    "status": "PENDING",
-    "uploadBatch": 1785633159012
+    "status": "COMPLETED",
+    "uploadBatch": 1785633159012,
+    "uploadedAt": "2026-08-05T11:17:27.568Z"
   },
   "TASK_1785633159012_129": {
     "ACCOUNTNUMBER": "14367320",
@@ -1022,10 +1029,17 @@
     "SEQUENCE": "1340",
     "ZIPCODE": "",
     "createdAt": "2026-08-02T09:12:39",
+    "deliveryType": "D6-Bagsakan",
     "driverId": "PAS-BILL70",
+    "forceReopen": false,
+    "other_remarks": "Katiwala",
+    "photo1Filename": "TASK_1785633159012_129_photo_1.jpg",
+    "photo1TakenAt": "2026-08-03T01:09:32.384Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1785633159012_129%2FTASK_1785633159012_129_photo_1.jpg?alt=media&token=30cf1f44-fe6f-41a3-87e5-f5e8b2d1b7e9",
     "rowIndex": 130,
-    "status": "PENDING",
-    "uploadBatch": 1785633159012
+    "status": "COMPLETED",
+    "uploadBatch": 1785633159012,
+    "uploadedAt": "2026-08-05T11:17:29.952Z"
   },
   "TASK_1785633159012_13": {
     "ACCOUNTNUMBER": "14369355",
@@ -7967,10 +7981,17 @@
     "SEQUENCE": "890",
     "ZIPCODE": "",
     "createdAt": "2026-08-02T09:12:39",
+    "deliveryType": "D6-Bagsakan",
     "driverId": "PAS-BILL70",
+    "forceReopen": false,
+    "other_remarks": "Katiwala",
+    "photo1Filename": "TASK_1785633159012_85_photo_1.jpg",
+    "photo1TakenAt": "2026-08-03T01:08:49.703Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1785633159012_85%2FTASK_1785633159012_85_photo_1.jpg?alt=media&token=4ac0e152-0837-4763-88b0-143def41f572",
     "rowIndex": 86,
-    "status": "PENDING",
-    "uploadBatch": 1785633159012
+    "status": "COMPLETED",
+    "uploadBatch": 1785633159012,
+    "uploadedAt": "2026-08-05T11:17:33.886Z"
   },
   "TASK_1785633159012_86": {
     "ACCOUNTNUMBER": "14368677",
