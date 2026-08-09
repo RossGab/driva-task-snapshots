@@ -61897,5 +61897,26 @@
     "rowIndex": 1000,
     "status": "PENDING",
     "uploadBatch": 1786238645886
+  },
+  "TASK_1786256637855_0": {
+    "ACCOUNTNUMBER": "22939607",
+    "ADDRESS": "L-10429 CRUZ IBAYO-TIPAS TAGUIG",
+    "AGENTID": "NICTPT",
+    "AGENTNAME": "NICANOR DE GUZMAN",
+    "BA": "TPT",
+    "CUSTOMERNAME": "CHILLAX TUBE ICE CORPORATION",
+    "DMZ": "A30",
+    "JOBTYPE": "BILLING",
+    "LATITUDE": "14.54310158",
+    "LONGITUDE": "121.0852193",
+    "METERNUMBER": "25000367-2024",
+    "MRU": "2438",
+    "SEQUENCE": "10",
+    "ZIPCODE": "",
+    "createdAt": "2026-08-09T14:23:57",
+    "driverId": "NICTPT",
+    "rowIndex": 1,
+    "status": "PENDING",
+    "uploadBatch": 1786256637855
   }
 }
