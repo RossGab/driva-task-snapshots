@@ -425192,10 +425192,17 @@
     "SEQUENCE": "1290",
     "ZIPCODE": "",
     "createdAt": "2026-08-06T09:14:07",
+    "deliveryType": "D5-Delivered to SA",
     "driverId": "PAS-BILL45",
+    "forceReopen": false,
+    "other_remarks": "No hard copy",
+    "photo1Filename": "TASK_1785978847458_976_photo_1.jpg",
+    "photo1TakenAt": "2026-08-11T05:22:38.454Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1785978847458_976%2FTASK_1785978847458_976_photo_1.jpg?alt=media&token=7ef6d35c-95a0-4406-8deb-81b4d6d86196",
     "rowIndex": 977,
-    "status": "PENDING",
-    "uploadBatch": 1785978847458
+    "status": "COMPLETED",
+    "uploadBatch": 1785978847458,
+    "uploadedAt": "2026-08-11T05:25:27.298Z"
   },
   "TASK_1785978847458_977": {
     "ACCOUNTNUMBER": "19892350",
