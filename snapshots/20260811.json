@@ -80620,10 +80620,19 @@
     "SEQUENCE": "380",
     "ZIPCODE": "",
     "createdAt": "2026-08-11T07:50:56",
+    "deliveryType": "D1-Received",
     "driverId": "PAS-BILL80",
+    "forceReopen": false,
+    "other_remarks": "",
+    "photo1Filename": "TASK_1786405856649_39_photo_1.jpg",
+    "photo1TakenAt": "2026-08-11T10:17:27.799Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1786405856649_39%2FTASK_1786405856649_39_photo_1.jpg?alt=media&token=be507b22-6369-475c-b077-251cd5d01444",
+    "received_by": "Neighborhood",
+    "relationship_to_owner": "Neighborhood",
     "rowIndex": 40,
-    "status": "PENDING",
-    "uploadBatch": 1786405856649
+    "status": "COMPLETED",
+    "uploadBatch": 1786405856649,
+    "uploadedAt": "2026-08-11T23:51:13.909Z"
   },
   "TASK_1786405856649_4": {
     "ACCOUNTNUMBER": "20069998",
@@ -80671,10 +80680,18 @@
     "SEQUENCE": "390",
     "ZIPCODE": "",
     "createdAt": "2026-08-11T07:50:56",
+    "deliveryType": "D2-Put in Mailbox",
     "driverId": "PAS-BILL80",
+    "forceReopen": false,
+    "gate_or_mailbox_color": "Brown mail box c",
+    "other_remarks": "",
+    "photo1Filename": "TASK_1786405856649_40_photo_1.jpg",
+    "photo1TakenAt": "2026-08-11T10:15:03.903Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1786405856649_40%2FTASK_1786405856649_40_photo_1.jpg?alt=media&token=d8d47554-4139-48e5-8423-88b7a44aaf92",
     "rowIndex": 41,
-    "status": "PENDING",
-    "uploadBatch": 1786405856649
+    "status": "COMPLETED",
+    "uploadBatch": 1786405856649,
+    "uploadedAt": "2026-08-11T23:51:20.771Z"
   },
   "TASK_1786405856649_41": {
     "ACCOUNTNUMBER": "20309079",
@@ -80692,10 +80709,18 @@
     "SEQUENCE": "400",
     "ZIPCODE": "",
     "createdAt": "2026-08-11T07:50:56",
+    "deliveryType": "D2-Put in Mailbox",
     "driverId": "PAS-BILL80",
+    "forceReopen": false,
+    "gate_or_mailbox_color": "Brown mail box A",
+    "other_remarks": "",
+    "photo1Filename": "TASK_1786405856649_41_photo_1.jpg",
+    "photo1TakenAt": "2026-08-11T10:15:39.215Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1786405856649_41%2FTASK_1786405856649_41_photo_1.jpg?alt=media&token=2bd1fde7-c6c7-455f-bc1b-003ba73df8ae",
     "rowIndex": 42,
-    "status": "PENDING",
-    "uploadBatch": 1786405856649
+    "status": "COMPLETED",
+    "uploadBatch": 1786405856649,
+    "uploadedAt": "2026-08-11T23:51:26.906Z"
   },
   "TASK_1786405856649_42": {
     "ACCOUNTNUMBER": "20309088",
