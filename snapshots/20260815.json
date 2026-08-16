@@ -185162,10 +185162,19 @@
     "SEQUENCE": "739",
     "ZIPCODE": "",
     "createdAt": "2026-08-15T08:41:59",
+    "deliveryType": "D1-Received",
     "driverId": "TPT-BILL11",
+    "forceReopen": false,
+    "other_remarks": "",
+    "photo1Filename": "TASK_1786754519183_1054_photo_1.jpg",
+    "photo1TakenAt": "2026-08-16T02:07:00.554Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1786754519183_1054%2FTASK_1786754519183_1054_photo_1.jpg?alt=media&token=a90002d3-951f-4b15-bcea-713b476b4988",
+    "received_by": "procesa",
+    "relationship_to_owner": "owner",
     "rowIndex": 1055,
-    "status": "PENDING",
-    "uploadBatch": 1786754519183
+    "status": "COMPLETED",
+    "uploadBatch": 1786754519183,
+    "uploadedAt": "2026-08-16T02:07:34.306Z"
   },
   "TASK_1786754519183_1055": {
     "ACCOUNTNUMBER": "22649449",
@@ -209200,10 +209209,17 @@
     "SEQUENCE": "9999",
     "ZIPCODE": "",
     "createdAt": "2026-08-15T08:41:59",
+    "deliveryType": "D5-Delivered to SA",
     "driverId": "TPT-BILL11",
+    "forceReopen": false,
+    "other_remarks": "cant find the location of the meter and the owner..",
+    "photo1Filename": "TASK_1786754519183_996_photo_1.jpg",
+    "photo1TakenAt": "2026-08-16T01:50:06.935Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1786754519183_996%2FTASK_1786754519183_996_photo_1.jpg?alt=media&token=b95ad7c3-c1d8-41cc-8635-94b2a06a76ec",
     "rowIndex": 997,
-    "status": "PENDING",
-    "uploadBatch": 1786754519183
+    "status": "COMPLETED",
+    "uploadBatch": 1786754519183,
+    "uploadedAt": "2026-08-16T02:08:58.952Z"
   },
   "TASK_1786754519183_997": {
     "ACCOUNTNUMBER": "12568553",
