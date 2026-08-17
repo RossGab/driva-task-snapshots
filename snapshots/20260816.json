@@ -120828,10 +120828,18 @@
     "SEQUENCE": "1310",
     "ZIPCODE": "",
     "createdAt": "2026-08-16T08:04:23",
+    "deliveryType": "D3-Inserted in Gate",
     "driverId": "TPT-BILL11",
+    "forceReopen": false,
+    "gate_or_mailbox_color": "green",
+    "other_remarks": "",
+    "photo1Filename": "TASK_1786838663510_579_photo_1.jpg",
+    "photo1TakenAt": "2026-08-17T04:55:49.968Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1786838663510_579%2FTASK_1786838663510_579_photo_1.jpg?alt=media&token=fa9e3a74-0582-470b-824c-76a29de4b933",
     "rowIndex": 580,
-    "status": "PENDING",
-    "uploadBatch": 1786838663510
+    "status": "COMPLETED",
+    "uploadBatch": 1786838663510,
+    "uploadedAt": "2026-08-17T05:00:34.396Z"
   },
   "TASK_1786838663510_58": {
     "ACCOUNTNUMBER": "22571584",
@@ -120870,10 +120878,18 @@
     "SEQUENCE": "1320",
     "ZIPCODE": "",
     "createdAt": "2026-08-16T08:04:23",
+    "deliveryType": "D3-Inserted in Gate",
     "driverId": "TPT-BILL11",
+    "forceReopen": false,
+    "gate_or_mailbox_color": "green",
+    "other_remarks": "",
+    "photo1Filename": "TASK_1786838663510_580_photo_1.jpg",
+    "photo1TakenAt": "2026-08-17T04:56:00.127Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1786838663510_580%2FTASK_1786838663510_580_photo_1.jpg?alt=media&token=49770c7d-0ab9-4456-a2dc-a29aa4207f67",
     "rowIndex": 581,
-    "status": "PENDING",
-    "uploadBatch": 1786838663510
+    "status": "COMPLETED",
+    "uploadBatch": 1786838663510,
+    "uploadedAt": "2026-08-17T05:00:38.530Z"
   },
   "TASK_1786838663510_581": {
     "ACCOUNTNUMBER": "12730618",
@@ -120977,10 +120993,17 @@
     "SEQUENCE": "1360",
     "ZIPCODE": "",
     "createdAt": "2026-08-16T08:04:23",
+    "deliveryType": "D4-Slid Under Door or Window",
+    "description": "door",
     "driverId": "TPT-BILL11",
+    "forceReopen": false,
+    "photo1Filename": "TASK_1786838663510_584_photo_1.jpg",
+    "photo1TakenAt": "2026-08-17T04:50:18.855Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1786838663510_584%2FTASK_1786838663510_584_photo_1.jpg?alt=media&token=601ff7aa-c5f6-4888-8bd1-6688a9b0ca25",
     "rowIndex": 585,
-    "status": "PENDING",
-    "uploadBatch": 1786838663510
+    "status": "COMPLETED",
+    "uploadBatch": 1786838663510,
+    "uploadedAt": "2026-08-17T05:00:41.176Z"
   },
   "TASK_1786838663510_585": {
     "ACCOUNTNUMBER": "21794337",
@@ -120998,10 +121021,18 @@
     "SEQUENCE": "1370",
     "ZIPCODE": "",
     "createdAt": "2026-08-16T08:04:23",
+    "deliveryType": "D2-Put in Mailbox",
     "driverId": "TPT-BILL11",
+    "forceReopen": false,
+    "gate_or_mailbox_color": "blue gray",
+    "other_remarks": "",
+    "photo1Filename": "TASK_1786838663510_585_photo_1.jpg",
+    "photo1TakenAt": "2026-08-17T04:59:49.104Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1786838663510_585%2FTASK_1786838663510_585_photo_1.jpg?alt=media&token=348ed305-53df-4998-b10f-709ea4bbff21",
     "rowIndex": 586,
-    "status": "PENDING",
-    "uploadBatch": 1786838663510
+    "status": "COMPLETED",
+    "uploadBatch": 1786838663510,
+    "uploadedAt": "2026-08-17T05:00:43.982Z"
   },
   "TASK_1786838663510_586": {
     "ACCOUNTNUMBER": "21794346",
@@ -121019,10 +121050,18 @@
     "SEQUENCE": "1380",
     "ZIPCODE": "",
     "createdAt": "2026-08-16T08:04:23",
+    "deliveryType": "D2-Put in Mailbox",
     "driverId": "TPT-BILL11",
+    "forceReopen": false,
+    "gate_or_mailbox_color": "blue gray",
+    "other_remarks": "",
+    "photo1Filename": "TASK_1786838663510_586_photo_1.jpg",
+    "photo1TakenAt": "2026-08-17T05:00:17.550Z",
+    "photo1Url": "https://firebasestorage.googleapis.com/v0/b/driva-pwa.firebasestorage.app/o/tasks%2FTASK_1786838663510_586%2FTASK_1786838663510_586_photo_1.jpg?alt=media&token=7c9c666c-fc08-496b-aaa2-af03de2297dc",
     "rowIndex": 587,
-    "status": "PENDING",
-    "uploadBatch": 1786838663510
+    "status": "COMPLETED",
+    "uploadBatch": 1786838663510,
+    "uploadedAt": "2026-08-17T05:00:47.236Z"
   },
   "TASK_1786838663510_587": {
     "ACCOUNTNUMBER": "12738898",
