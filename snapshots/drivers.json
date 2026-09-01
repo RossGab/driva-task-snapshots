@@ -2983,6 +2983,26 @@
     "updatedAt": "2026-08-28T01:05:16.322Z",
     "vehicle": ""
   },
+  "PAS-CRS17": {
+    "address": "",
+    "contact": "",
+    "createdAt": "2026-09-01T00:36:03.877Z",
+    "driverCode": "PAS-CRS17",
+    "name": "RYAN N.BERNAL",
+    "team": "",
+    "updatedAt": "2026-09-01T00:36:03.877Z",
+    "vehicle": ""
+  },
+  "PAS-CRS18": {
+    "address": "",
+    "contact": "",
+    "createdAt": "2026-09-01T00:36:10.558Z",
+    "driverCode": "PAS-CRS18",
+    "name": "MON ANDREI GONZALES",
+    "team": "",
+    "updatedAt": "2026-09-01T00:36:10.558Z",
+    "vehicle": ""
+  },
   "PAS-CRS2": {
     "address": "",
     "contact": "",
